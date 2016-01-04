@@ -1,0 +1,23 @@
+Paper todo:
+1) Finalize phylogenetic tree plots  
+    I talked to Dave about this.  He thinks that the plots that I have are than they aren't properly bootstrapped.  I'm not sure about what is the best way to bootstrap these trees.  
+	One person ISMB suggested that I need an outgroup.  Do you think this is a good idea?
+	Another person at ISMB recommended that I use GraPhlAn https://bitbucket.org/nsegata/graphlan/wiki/Home.  It looks like a neat package, but I'll need to evaluate if it is feasible to get results within the next few days
+2) Finalize violinplots
+3) Generate validation results
+   Species comparison between BAGEL and our tool
+   Annotation comparision concerning context genes discovered by our tool
+4) Draw all operons related to Streptococcus Pyogenes sag operon
+5) Draw all operons related to Thermotoga martima (maybe)
+6) Draw barplots of operons and their function distributions
+
+Todo:
+1) Consider getting rid of protein sequences after the first step of the pipeline
+   Only use DNA sequences
+   Pros: No six-frame translation BS
+         Take advantage of nhmmer speedup
+2) Seriously cleanup code
+   e.g. genbank.py and genome.py
+3) Double check to see if all unittests are working
+   Consider installing nosetests
+4) Consider making package portable

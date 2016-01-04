@@ -1,0 +1,91 @@
+LOCUS       ACI60900                 307 aa            linear   BCT 31-JAN-2014
+DEFINITION  Streptolysin S export ATP-binding protein (SagG) [Streptococcus
+            pyogenes NZ131].
+ACCESSION   ACI60900
+VERSION     ACI60900.1  GI:209540324
+DBLINK      BioProject: PRJNA20707
+            BioSample: SAMN02604236
+DBSOURCE    accession CP000829.1
+KEYWORDS    .
+SOURCE      Streptococcus pyogenes NZ131
+  ORGANISM  Streptococcus pyogenes NZ131
+            Bacteria; Firmicutes; Bacilli; Lactobacillales; Streptococcaceae;
+            Streptococcus.
+REFERENCE   1  (residues 1 to 307)
+  AUTHORS   McShan,W.M., Ferretti,J.J., Karasawa,T., Suvorov,A.N., Lin,S.,
+            Qin,B., Jia,H., Kenton,S., Najar,F., Wu,H., Scott,J., Roe,B.A. and
+            Savic,D.J.
+  TITLE     Genome sequence of a nephritogenic and highly transformable M49
+            strain of Streptococcus pyogenes
+  JOURNAL   J. Bacteriol. 190 (23), 7773-7785 (2008)
+   PUBMED   18820018
+REFERENCE   2  (residues 1 to 307)
+  AUTHORS   McShan,W.M.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (13-SEP-2007) Pharmaceutical Sciences, University of
+            Oklahoma Health Sciences Center, P.O. Box 26901, Oklahoma City, OK
+            73190, USA
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..307
+                     /organism="Streptococcus pyogenes NZ131"
+                     /strain="NZ131; ATCC BAA-1633"
+                     /serotype="M49"
+                     /culture_collection="ATCC:BAA-1633"
+                     /db_xref="taxon:471876"
+                     /focus
+     Protein         1..307
+                     /product="Streptolysin S export ATP-binding protein
+                     (SagG)"
+     Region          1..303
+                     /region_name="CcmA"
+                     /note="ABC-type multidrug transport system, ATPase
+                     component [Defense mechanisms]; COG1131"
+                     /db_xref="CDD:224054"
+     Region          4..221
+                     /region_name="ABC_ATPase"
+                     /note="ATP-binding cassette transporter nucleotide-binding
+                     domain; cl21455"
+                     /db_xref="CDD:276299"
+     Site            37..44
+                     /site_type="other"
+                     /note="Walker A/P-loop"
+                     /db_xref="CDD:213179"
+     Site            order(40..41,43..45,83,159..160,192)
+                     /site_type="other"
+                     /note="ATP binding site [chemical binding]"
+                     /db_xref="CDD:213179"
+     Site            80..83
+                     /site_type="other"
+                     /note="Q-loop/lid"
+                     /db_xref="CDD:213179"
+     Site            135..144
+                     /site_type="other"
+                     /note="ABC transporter signature motif"
+                     /db_xref="CDD:213179"
+     Site            155..160
+                     /site_type="other"
+                     /note="Walker B"
+                     /db_xref="CDD:213179"
+     Site            163..166
+                     /site_type="other"
+                     /note="D-loop"
+                     /db_xref="CDD:213179"
+     Site            188..194
+                     /site_type="other"
+                     /note="H-loop/switch region"
+                     /db_xref="CDD:213179"
+     CDS             1..307
+                     /gene="sagG"
+                     /locus_tag="Spy49_0575"
+                     /coded_by="CP000829.1:574924..575847"
+                     /transl_table=11
+ORIGIN      
+        1 msfvqltnvv ksykngkkav ndvslsieag niygllgpng agkstlinli lgliplssgk
+       61 itvlgqsqkt irkissqigy vpqdiavypd ltayenvelf gslyglkgaq lkkqvlksle
+      121 fvglhsqakq fpsqfsggmk rrlniacalv hspkliifde ptvgidpqsr nhilesirll
+      181 nkegatviyt thymeeveal cdyifimdhg qvieegpkfe lekryvanla nqiivtltds
+      241 rhleladkpd wsliedgekl mlkidnsdmt svvhqltqan itfseirhnh lnleeiflhl
+      301 tgkklrd
+//
+

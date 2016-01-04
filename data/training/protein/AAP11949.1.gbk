@@ -1,0 +1,76 @@
+LOCUS       AAP11949                 265 aa            linear   BCT 30-JAN-2014
+DEFINITION  Methyltransferase [Bacillus cereus ATCC 14579].
+ACCESSION   AAP11949
+VERSION     AAP11949.1  GI:29898677
+DBLINK      BioProject: PRJNA384
+            BioSample: SAMN02603340
+DBSOURCE    accession AE016877.1
+KEYWORDS    .
+SOURCE      Bacillus cereus ATCC 14579
+  ORGANISM  Bacillus cereus ATCC 14579
+            Bacteria; Firmicutes; Bacilli; Bacillales; Bacillaceae; Bacillus;
+            Bacillus cereus group.
+REFERENCE   1  (residues 1 to 265)
+  AUTHORS   Ivanova,N., Sorokin,A., Anderson,I., Galleron,N., Candelon,B.,
+            Kapatral,V., Bhattacharyya,A., Reznik,G., Mikhailova,N.,
+            Lapidus,A., Chu,L., Mazur,M., Goltsman,E., Larsen,N., D'Souza,M.,
+            Walunas,T., Grechkin,Y., Pusch,G., Haselkorn,R., Fonstein,M.,
+            Ehrlich,S.D., Overbeek,R. and Kyrpides,N.
+  TITLE     Genome sequence of Bacillus cereus and comparative analysis with
+            Bacillus anthracis
+  JOURNAL   Nature 423 (6935), 87-91 (2003)
+   PUBMED   12721630
+REFERENCE   2  (residues 1 to 265)
+  AUTHORS   Candelon,B., Gailloux,K., Ehrlich,D.S. and Sorokin,A.
+  TITLE     The number of ribosomal RNA operons in Bacillus cereus
+  JOURNAL   Unpublished
+REFERENCE   3  (residues 1 to 265)
+  AUTHORS   Ivanova,N., Sorokin,A., Anderson,I., Galleron,N., Candelon,B.,
+            Kapatral,V., Bhattacharyya,A., Reznik,G., Mikhailova,N.,
+            Lapidus,A., Chu,L., Mazur,M., Goltsman,E., Larsen,N., D'Souza,M.,
+            Walunas,T., Grechkin,Y., Pusch,G., Haselkorn,R., Fonstein,M.,
+            Ehrlich,D.S.D., Overbeek,R. and Kyrpides,N.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (12-MAR-2003) INRA, Genetique Microbienne, Domaine de
+            Vilvert, Jouy en Josas 78352, France
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..265
+                     /organism="Bacillus cereus ATCC 14579"
+                     /strain="ATCC 14579"
+                     /db_xref="ATCC:14579"
+                     /db_xref="taxon:226900"
+                     /focus
+     Protein         1..265
+                     /product="Methyltransferase"
+                     /EC_number="2.1.1.-"
+     Region          12..221
+                     /region_name="PLN02244"
+                     /note="tocopherol O-methyltransferase"
+                     /db_xref="CDD:215135"
+     Region          64..158
+                     /region_name="AdoMet_MTases"
+                     /note="S-adenosylmethionine-dependent methyltransferases
+                     (SAM or AdoMet-MTase), class I; AdoMet-MTases are enzymes
+                     that use S-adenosyl-L-methionine (SAM or AdoMet) as a
+                     substrate for methyltransfer, creating the product
+                     S-adenosyl-L-homocysteine (AdoHcy); cd02440"
+                     /db_xref="CDD:100107"
+     Site            order(67..73,90..91,117..119,135)
+                     /site_type="other"
+                     /note="S-adenosylmethionine binding site [chemical
+                     binding]"
+                     /db_xref="CDD:100107"
+     CDS             1..265
+                     /locus_tag="BC_5080"
+                     /old_locus_tag="BC5080"
+                     /coded_by="complement(AE016877.1:4985716..4986513)"
+                     /transl_table=11
+ORIGIN      
+        1 myennvkdtk dfyndighis wsvapsqhyh vgifelekds medaqnrtve ymarkvaasd
+       61 ldvlldigcg sgltavqisk kenckivgin isekqlaigk kliskekins rvklmnmdah
+      121 qlnfksgmfd gayalesimh mnrekvlsev hrvlkngapf slcdwyvkks ltpvekrfle
+      181 titlgkyitk eqyfslyqtq nfmdieieew snkilptyky wttitdemke klpdhllyvi
+      241 eenskvlsdi aieklgylqv ngikr
+//
+

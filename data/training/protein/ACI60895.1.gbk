@@ -1,0 +1,69 @@
+LOCUS       ACI60895                 316 aa            linear   BCT 31-JAN-2014
+DEFINITION  Streptolysin S biosynthesis protein B (SagB) [Streptococcus
+            pyogenes NZ131].
+ACCESSION   ACI60895
+VERSION     ACI60895.1  GI:209540319
+DBLINK      BioProject: PRJNA20707
+            BioSample: SAMN02604236
+DBSOURCE    accession CP000829.1
+KEYWORDS    .
+SOURCE      Streptococcus pyogenes NZ131
+  ORGANISM  Streptococcus pyogenes NZ131
+            Bacteria; Firmicutes; Bacilli; Lactobacillales; Streptococcaceae;
+            Streptococcus.
+REFERENCE   1  (residues 1 to 316)
+  AUTHORS   McShan,W.M., Ferretti,J.J., Karasawa,T., Suvorov,A.N., Lin,S.,
+            Qin,B., Jia,H., Kenton,S., Najar,F., Wu,H., Scott,J., Roe,B.A. and
+            Savic,D.J.
+  TITLE     Genome sequence of a nephritogenic and highly transformable M49
+            strain of Streptococcus pyogenes
+  JOURNAL   J. Bacteriol. 190 (23), 7773-7785 (2008)
+   PUBMED   18820018
+REFERENCE   2  (residues 1 to 316)
+  AUTHORS   McShan,W.M.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (13-SEP-2007) Pharmaceutical Sciences, University of
+            Oklahoma Health Sciences Center, P.O. Box 26901, Oklahoma City, OK
+            73190, USA
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..316
+                     /organism="Streptococcus pyogenes NZ131"
+                     /strain="NZ131; ATCC BAA-1633"
+                     /serotype="M49"
+                     /culture_collection="ATCC:BAA-1633"
+                     /db_xref="taxon:471876"
+                     /focus
+     Protein         1..316
+                     /product="Streptolysin S biosynthesis protein B (SagB)"
+     Region          125..312
+                     /region_name="mcbC-like_oxidoreductase"
+                     /note="This family is the oxydase domain of NRPS
+                     (non-ribosomal peptide synthetase) and other proteins that
+                     modify polypeptides by cyclizing a thioester to form a
+                     ring. These include epoB, part of the epothilone
+                     biosynthesis pathway; tubD, part of the tubulysin...;
+                     cd02142"
+                     /db_xref="CDD:239056"
+     Site            order(128,130,132,284..285,306)
+                     /site_type="other"
+                     /note="putative FMN binding site [chemical binding]"
+                     /db_xref="CDD:239056"
+     Site            order(132,173)
+                     /site_type="other"
+                     /note="NADPH bind site [chemical binding]"
+                     /db_xref="CDD:239056"
+     CDS             1..316
+                     /gene="sagB"
+                     /locus_tag="Spy49_0569"
+                     /coded_by="CP000829.1:570192..571142"
+                     /transl_table=11
+ORIGIN      
+        1 msfftkeqqp kencppitve karqlfefnt nhlslsdyhh qtvlktskql vaqhlmpnat
+       61 dnlsqhflmn ykannnylgf qasivdfftd savanfsssy vyesqekiir lpkptkista
+      121 lstciikrrs hrqfsdrqmp lqdlsnilyy acgvssqasi rdgasdkitl rncasgggly
+      181 pihlvfyarn isklidgfye ylpyqhalrc yrhsseenvr dfaeygaina encniiiiyv
+      241 yhyikntrky gnqatayafi esgeiaqniq ltataltygs idiggynkey lqelldldgl
+      301 gehvihmtlv gtkesq
+//
+

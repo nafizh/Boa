@@ -1,0 +1,55 @@
+LOCUS       ACI60898                 223 aa            linear   BCT 31-JAN-2014
+DEFINITION  Streptolysin S self-immunity protein (SagE) [Streptococcus pyogenes
+            NZ131].
+ACCESSION   ACI60898
+VERSION     ACI60898.1  GI:209540322
+DBLINK      BioProject: PRJNA20707
+            BioSample: SAMN02604236
+DBSOURCE    accession CP000829.1
+KEYWORDS    .
+SOURCE      Streptococcus pyogenes NZ131
+  ORGANISM  Streptococcus pyogenes NZ131
+            Bacteria; Firmicutes; Bacilli; Lactobacillales; Streptococcaceae;
+            Streptococcus.
+REFERENCE   1  (residues 1 to 223)
+  AUTHORS   McShan,W.M., Ferretti,J.J., Karasawa,T., Suvorov,A.N., Lin,S.,
+            Qin,B., Jia,H., Kenton,S., Najar,F., Wu,H., Scott,J., Roe,B.A. and
+            Savic,D.J.
+  TITLE     Genome sequence of a nephritogenic and highly transformable M49
+            strain of Streptococcus pyogenes
+  JOURNAL   J. Bacteriol. 190 (23), 7773-7785 (2008)
+   PUBMED   18820018
+REFERENCE   2  (residues 1 to 223)
+  AUTHORS   McShan,W.M.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (13-SEP-2007) Pharmaceutical Sciences, University of
+            Oklahoma Health Sciences Center, P.O. Box 26901, Oklahoma City, OK
+            73190, USA
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..223
+                     /organism="Streptococcus pyogenes NZ131"
+                     /strain="NZ131; ATCC BAA-1633"
+                     /serotype="M49"
+                     /culture_collection="ATCC:BAA-1633"
+                     /db_xref="taxon:471876"
+                     /focus
+     Protein         1..223
+                     /product="Streptolysin S self-immunity protein (SagE)"
+     Region          1..208
+                     /region_name="COG1266"
+                     /note="Predicted metal-dependent membrane protease
+                     [General function prediction only]"
+                     /db_xref="CDD:224185"
+     CDS             1..223
+                     /gene="sagE"
+                     /locus_tag="Spy49_0573"
+                     /coded_by="CP000829.1:573550..574221"
+                     /transl_table=11
+ORIGIN      
+        1 mplsiqclnl cfllvtfcps ipmqaifgke dsgyafnlig flratliydi lalvsiyvls
+       61 pqitlslesi dsktffmglv fcvlivliel vflhglrcwq kkqwlpatfs fvgttndwsk
+      121 igyplllalf eetiyrflwf nilafqwhlp tiivlivtsf cyalnhllmg ksifyaklvt
+      181 giiygsiyml tsqlwlvvim hvggnllvec lshlqtkkkk evt
+//
+

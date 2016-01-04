@@ -1,0 +1,57 @@
+LOCUS       ADZ63259                 214 aa            linear   BCT 10-FEB-2015
+DEFINITION  nisin transport protein NisG [Lactococcus lactis subsp. lactis
+            CV56].
+ACCESSION   ADZ63259
+VERSION     ADZ63259.1  GI:326406188
+DBLINK      BioProject: PRJNA60377
+            BioSample: SAMN02603398
+DBSOURCE    accession CP002365.1
+KEYWORDS    .
+SOURCE      Lactococcus lactis subsp. lactis CV56
+  ORGANISM  Lactococcus lactis subsp. lactis CV56
+            Bacteria; Firmicutes; Bacilli; Lactobacillales; Streptococcaceae;
+            Lactococcus.
+REFERENCE   1  (residues 1 to 214)
+  AUTHORS   Gao,Y., Lu,Y., Teng,K.L., Chen,M.L., Zheng,H.J., Zhu,Y.Q. and
+            Zhong,J.
+  TITLE     Complete Genome Sequence of Lactococcus lactis subsp. lactis CV56,
+            a Probiotic Strain Isolated from the Vaginas of Healthy Women
+  JOURNAL   J. Bacteriol. 193 (11), 2886-2887 (2011)
+   PUBMED   21460077
+REFERENCE   2  (residues 1 to 214)
+  AUTHORS   Gao,Y., Lu,Y., Teng,K. and Zhong,J.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (23-NOV-2010) Molecular Genetic of Lactis Acid Bacteria,
+            Institute of Microbiology, Chinese Academy of Sciences, A601 1-3
+            West Beichen Road, Institute of Microbiology, Beijing 100101, China
+COMMENT     Bacterial Strain CV56 available from Dr. Jin Zhong
+            (zhongj@im.ac.cn) at Institute of Microbiology, Chinese Academy of
+            Sciences.
+            Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..214
+                     /organism="Lactococcus lactis subsp. lactis CV56"
+                     /strain="CV56"
+                     /isolation_source="vagina of healthy women"
+                     /host="Homo sapiens"
+                     /sub_species="lactis"
+                     /db_xref="taxon:929102"
+     Protein         1..214
+                     /product="nisin transport protein NisG"
+     Region          <53..>149
+                     /region_name="lanti_perm_MutG"
+                     /note="lantibiotic protection ABC transporter permease
+                     subunit, MutG family; TIGR03733"
+                     /db_xref="CDD:163445"
+     CDS             1..214
+                     /gene="nisG"
+                     /locus_tag="CVCAS_0597"
+                     /coded_by="CP002365.1:617367..618011"
+                     /transl_table=11
+ORIGIN      
+        1 mirseclklk nslgfylvfl ftllelltvp iylafgrshv smtdlslmif lffpllvtil
+       61 silifeqesl anrfqeinvn kkssriwlsk livvdfllff psamiwiitg vsqavgqqgm
+      121 miataswlma iflnhfhlll tfiinrggsm iiaiieilli ifasnkvlla aywcpialpv
+      181 nfmitgrcay liaavgwivl stiilvalsk kkir
+//
+

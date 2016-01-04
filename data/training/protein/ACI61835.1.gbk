@@ -1,0 +1,98 @@
+LOCUS       ACI61835                 201 aa            linear   BCT 31-JAN-2014
+DEFINITION  Putative response regulator of salavaricin regulon [Streptococcus
+            pyogenes NZ131].
+ACCESSION   ACI61835
+VERSION     ACI61835.1  GI:209541259
+DBLINK      BioProject: PRJNA20707
+            BioSample: SAMN02604236
+DBSOURCE    accession CP000829.1
+KEYWORDS    .
+SOURCE      Streptococcus pyogenes NZ131
+  ORGANISM  Streptococcus pyogenes NZ131
+            Bacteria; Firmicutes; Bacilli; Lactobacillales; Streptococcaceae;
+            Streptococcus.
+REFERENCE   1  (residues 1 to 201)
+  AUTHORS   McShan,W.M., Ferretti,J.J., Karasawa,T., Suvorov,A.N., Lin,S.,
+            Qin,B., Jia,H., Kenton,S., Najar,F., Wu,H., Scott,J., Roe,B.A. and
+            Savic,D.J.
+  TITLE     Genome sequence of a nephritogenic and highly transformable M49
+            strain of Streptococcus pyogenes
+  JOURNAL   J. Bacteriol. 190 (23), 7773-7785 (2008)
+   PUBMED   18820018
+REFERENCE   2  (residues 1 to 201)
+  AUTHORS   McShan,W.M.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (13-SEP-2007) Pharmaceutical Sciences, University of
+            Oklahoma Health Sciences Center, P.O. Box 26901, Oklahoma City, OK
+            73190, USA
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..201
+                     /organism="Streptococcus pyogenes NZ131"
+                     /strain="NZ131; ATCC BAA-1633"
+                     /serotype="M49"
+                     /culture_collection="ATCC:BAA-1633"
+                     /db_xref="taxon:471876"
+                     /focus
+     Protein         1..201
+                     /product="Putative response regulator of salavaricin
+                     regulon"
+     Region          1..200
+                     /region_name="CitB"
+                     /note="Response regulator containing a CheY-like receiver
+                     domain and an HTH DNA-binding domain [Signal transduction
+                     mechanisms / Transcription]; COG2197"
+                     /db_xref="CDD:225107"
+     Region          4..119
+                     /region_name="REC"
+                     /note="Signal receiver domain; originally thought to be
+                     unique to bacteria (CheY, OmpR, NtrC, and PhoB), now
+                     recently identified in eukaroytes ETR1 Arabidopsis
+                     thaliana; this domain receives the signal from the sensor
+                     partner in a two-component systems; cd00156"
+                     /db_xref="CDD:238088"
+     Site            order(7..8,52,63,83,102,105..106)
+                     /site_type="active"
+                     /db_xref="CDD:238088"
+     Site            52
+                     /site_type="phosphorylation"
+                     /note="phosphorylation site [posttranslational
+                     modification]"
+                     /db_xref="CDD:238088"
+     Site            order(55..56,58,62..63)
+                     /site_type="other"
+                     /note="intermolecular recognition site"
+                     /db_xref="CDD:238088"
+     Site            105..107
+                     /site_type="other"
+                     /note="dimerization interface [polypeptide binding]"
+                     /db_xref="CDD:238088"
+     Region          138..194
+                     /region_name="LuxR_C_like"
+                     /note="C-terminal DNA-binding domain of LuxR-like
+                     proteins. This domain contains a helix-turn-helix motif
+                     and binds DNA. Proteins belonging to this group are
+                     response regulators; some act as transcriptional
+                     activators, others as transcriptional repressors. Many...;
+                     cd06170"
+                     /db_xref="CDD:99777"
+     Site            order(139..141,154..156,164..165,167..168,170..174,185)
+                     /site_type="DNA binding"
+                     /note="DNA binding residues [nucleotide binding]"
+                     /db_xref="CDD:99777"
+     Site            order(150,152,154,185..187,190,193..194)
+                     /site_type="other"
+                     /note="dimerization interface [polypeptide binding]"
+                     /db_xref="CDD:99777"
+     CDS             1..201
+                     /gene="salR"
+                     /locus_tag="Spy49_1576c"
+                     /coded_by="complement(CP000829.1:1555876..1556481)"
+                     /transl_table=11
+ORIGIN      
+        1 mkilliddhr lfaksiqllf qqydevdvid titshfndvt idlskydiil ldinltnisk
+       61 engleiakel iqstphlkvv mltgyvksiy rerakkvgay gfvdknidpk qlisilkkvd
+      121 sgkkyfeqie sqdyvesltd qeiailnlsk kgfsikeiee tlqisrrtvf nhlthiyskl
+      181 lvnnkqeaiy kaeqlgyfmd f
+//
+

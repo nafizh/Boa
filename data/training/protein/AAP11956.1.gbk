@@ -1,0 +1,60 @@
+LOCUS       AAP11956                  52 aa            linear   BCT 30-JAN-2014
+DEFINITION  putative lantibiotic precursor peptide [Bacillus cereus ATCC
+            14579].
+ACCESSION   AAP11956
+VERSION     AAP11956.1  GI:29898684
+DBLINK      BioProject: PRJNA384
+            BioSample: SAMN02603340
+DBSOURCE    accession AE016877.1
+KEYWORDS    .
+SOURCE      Bacillus cereus ATCC 14579
+  ORGANISM  Bacillus cereus ATCC 14579
+            Bacteria; Firmicutes; Bacilli; Bacillales; Bacillaceae; Bacillus;
+            Bacillus cereus group.
+REFERENCE   1  (residues 1 to 52)
+  AUTHORS   Ivanova,N., Sorokin,A., Anderson,I., Galleron,N., Candelon,B.,
+            Kapatral,V., Bhattacharyya,A., Reznik,G., Mikhailova,N.,
+            Lapidus,A., Chu,L., Mazur,M., Goltsman,E., Larsen,N., D'Souza,M.,
+            Walunas,T., Grechkin,Y., Pusch,G., Haselkorn,R., Fonstein,M.,
+            Ehrlich,S.D., Overbeek,R. and Kyrpides,N.
+  TITLE     Genome sequence of Bacillus cereus and comparative analysis with
+            Bacillus anthracis
+  JOURNAL   Nature 423 (6935), 87-91 (2003)
+   PUBMED   12721630
+REFERENCE   2  (residues 1 to 52)
+  AUTHORS   Candelon,B., Gailloux,K., Ehrlich,D.S. and Sorokin,A.
+  TITLE     The number of ribosomal RNA operons in Bacillus cereus
+  JOURNAL   Unpublished
+REFERENCE   3  (residues 1 to 52)
+  AUTHORS   Ivanova,N., Sorokin,A., Anderson,I., Galleron,N., Candelon,B.,
+            Kapatral,V., Bhattacharyya,A., Reznik,G., Mikhailova,N.,
+            Lapidus,A., Chu,L., Mazur,M., Goltsman,E., Larsen,N., D'Souza,M.,
+            Walunas,T., Grechkin,Y., Pusch,G., Haselkorn,R., Fonstein,M.,
+            Ehrlich,D.S.D., Overbeek,R. and Kyrpides,N.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (12-MAR-2003) INRA, Genetique Microbienne, Domaine de
+            Vilvert, Jouy en Josas 78352, France
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..52
+                     /organism="Bacillus cereus ATCC 14579"
+                     /strain="ATCC 14579"
+                     /db_xref="ATCC:14579"
+                     /db_xref="taxon:226900"
+                     /focus
+     Protein         1..52
+                     /product="putative lantibiotic precursor peptide"
+     Region          4..38
+                     /region_name="thiopep_precurs"
+                     /note="thiazolylpeptide-type bacteriocin precursor;
+                     TIGR03892"
+                     /db_xref="CDD:188407"
+     CDS             1..52
+                     /locus_tag="BC_5087"
+                     /old_locus_tag="BC5087"
+                     /coded_by="complement(AE016877.1:4996424..4996582)"
+                     /transl_table=11
+ORIGIN      
+        1 mseikkalnt leiedfdaie mvdvdampen ealeimgasc ttcvctcscc tt
+//
+

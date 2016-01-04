@@ -1,0 +1,66 @@
+LOCUS       ACI61836                 473 aa            linear   BCT 31-JAN-2014
+DEFINITION  SalK [Streptococcus pyogenes NZ131].
+ACCESSION   ACI61836
+VERSION     ACI61836.1  GI:209541260
+DBLINK      BioProject: PRJNA20707
+            BioSample: SAMN02604236
+DBSOURCE    accession CP000829.1
+KEYWORDS    .
+SOURCE      Streptococcus pyogenes NZ131
+  ORGANISM  Streptococcus pyogenes NZ131
+            Bacteria; Firmicutes; Bacilli; Lactobacillales; Streptococcaceae;
+            Streptococcus.
+REFERENCE   1  (residues 1 to 473)
+  AUTHORS   McShan,W.M., Ferretti,J.J., Karasawa,T., Suvorov,A.N., Lin,S.,
+            Qin,B., Jia,H., Kenton,S., Najar,F., Wu,H., Scott,J., Roe,B.A. and
+            Savic,D.J.
+  TITLE     Genome sequence of a nephritogenic and highly transformable M49
+            strain of Streptococcus pyogenes
+  JOURNAL   J. Bacteriol. 190 (23), 7773-7785 (2008)
+   PUBMED   18820018
+REFERENCE   2  (residues 1 to 473)
+  AUTHORS   McShan,W.M.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (13-SEP-2007) Pharmaceutical Sciences, University of
+            Oklahoma Health Sciences Center, P.O. Box 26901, Oklahoma City, OK
+            73190, USA
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..473
+                     /organism="Streptococcus pyogenes NZ131"
+                     /strain="NZ131; ATCC BAA-1633"
+                     /serotype="M49"
+                     /culture_collection="ATCC:BAA-1633"
+                     /db_xref="taxon:471876"
+                     /focus
+     Protein         1..473
+                     /product="SalK"
+     Region          <272..462
+                     /region_name="COG4585"
+                     /note="Signal transduction histidine kinase [Signal
+                     transduction mechanisms]"
+                     /db_xref="CDD:226951"
+     Region          386..461
+                     /region_name="HATPase_c"
+                     /note="Histidine kinase-like ATPases; This family includes
+                     several ATP-binding proteins for example: histidine
+                     kinase, DNA gyrase B, topoisomerases, heat shock protein
+                     HSP90, phytochrome-like ATPases and DNA mismatch repair
+                     proteins; cl00075"
+                     /db_xref="CDD:275468"
+     CDS             1..473
+                     /gene="salK"
+                     /locus_tag="Spy49_1577c"
+                     /coded_by="complement(CP000829.1:1556462..1557883)"
+                     /transl_table=11
+ORIGIN      
+        1 mtlidtafiw latilrqkqd difkriisii sltiwqylvs vltrgtplfl ssglqiilly
+       61 cytveitnli lyghkqfkdr ldkglliiif vsitslfvns ilfnflflmv ftilhlypll
+      121 vivlyyrsfr qqisvvrrsl ilfsllllvi lgselygeml dvnqafnnlg wylfplimsv
+      181 iyyfktihdk lsfvtqrwlg dykariellf lllilcwivl mkvlvkdfll ffivvdastl
+      241 fclvviscif yylkdskqnf dyenrrlnyf mkseenmrve fsnylhddvl qniiaiknll
+      301 slensnithg fivnelndlv sgirdemdty hpivpanqtm keniqslfdd ivksrksntl
+      361 lyfncsdnmv vpspygdivy rfikelinna ikygdgkdir lsltiqsdii iieesnqvve
+      421 kvhsinygrg lksfqetlaa fdgdlelqmd tkqftirill pidwklcyed fin
+//
+

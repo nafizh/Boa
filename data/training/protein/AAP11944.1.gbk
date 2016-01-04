@@ -1,0 +1,85 @@
+LOCUS       AAP11944                 141 aa            linear   BCT 30-JAN-2014
+DEFINITION  LSU ribosomal protein L11P [Bacillus cereus ATCC 14579].
+ACCESSION   AAP11944
+VERSION     AAP11944.1  GI:29898672
+DBLINK      BioProject: PRJNA384
+            BioSample: SAMN02603340
+DBSOURCE    accession AE016877.1
+KEYWORDS    .
+SOURCE      Bacillus cereus ATCC 14579
+  ORGANISM  Bacillus cereus ATCC 14579
+            Bacteria; Firmicutes; Bacilli; Bacillales; Bacillaceae; Bacillus;
+            Bacillus cereus group.
+REFERENCE   1  (residues 1 to 141)
+  AUTHORS   Ivanova,N., Sorokin,A., Anderson,I., Galleron,N., Candelon,B.,
+            Kapatral,V., Bhattacharyya,A., Reznik,G., Mikhailova,N.,
+            Lapidus,A., Chu,L., Mazur,M., Goltsman,E., Larsen,N., D'Souza,M.,
+            Walunas,T., Grechkin,Y., Pusch,G., Haselkorn,R., Fonstein,M.,
+            Ehrlich,S.D., Overbeek,R. and Kyrpides,N.
+  TITLE     Genome sequence of Bacillus cereus and comparative analysis with
+            Bacillus anthracis
+  JOURNAL   Nature 423 (6935), 87-91 (2003)
+   PUBMED   12721630
+REFERENCE   2  (residues 1 to 141)
+  AUTHORS   Candelon,B., Gailloux,K., Ehrlich,D.S. and Sorokin,A.
+  TITLE     The number of ribosomal RNA operons in Bacillus cereus
+  JOURNAL   Unpublished
+REFERENCE   3  (residues 1 to 141)
+  AUTHORS   Ivanova,N., Sorokin,A., Anderson,I., Galleron,N., Candelon,B.,
+            Kapatral,V., Bhattacharyya,A., Reznik,G., Mikhailova,N.,
+            Lapidus,A., Chu,L., Mazur,M., Goltsman,E., Larsen,N., D'Souza,M.,
+            Walunas,T., Grechkin,Y., Pusch,G., Haselkorn,R., Fonstein,M.,
+            Ehrlich,D.S.D., Overbeek,R. and Kyrpides,N.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (12-MAR-2003) INRA, Genetique Microbienne, Domaine de
+            Vilvert, Jouy en Josas 78352, France
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..141
+                     /organism="Bacillus cereus ATCC 14579"
+                     /strain="ATCC 14579"
+                     /db_xref="ATCC:14579"
+                     /db_xref="taxon:226900"
+                     /focus
+     Protein         1..141
+                     /product="LSU ribosomal protein L11P"
+     Region          1..139
+                     /region_name="rplK"
+                     /note="50S ribosomal protein L11; Validated; PRK00140"
+                     /db_xref="CDD:234661"
+     Region          9..139
+                     /region_name="Ribosomal_L11"
+                     /note="Ribosomal protein L11. Ribosomal protein L11,
+                     together with proteins L10 and L7/L12, and 23S rRNA, form
+                     the L7/L12 stalk on the surface of the large subunit of
+                     the ribosome. The homologous eukaryotic cytoplasmic
+                     protein is also called 60S ribosomal...; cd00349"
+                     /db_xref="CDD:100101"
+     Site            order(10,30,74..76,80,87,112,117..119,123,126..127,
+                     130..131,133..135)
+                     /site_type="other"
+                     /note="23S rRNA interface [nucleotide binding]"
+                     /db_xref="CDD:100101"
+     Site            order(10,57,59..62,66,68..69,113..114,117..118)
+                     /site_type="other"
+                     /note="L7/L12 interface [polypeptide binding]"
+                     /db_xref="CDD:100101"
+     Site            order(26,30)
+                     /site_type="other"
+                     /note="putative thiostrepton binding site"
+                     /db_xref="CDD:100101"
+     Site            order(93,96)
+                     /site_type="other"
+                     /note="L25 interface [polypeptide binding]"
+                     /db_xref="CDD:100101"
+     CDS             1..141
+                     /locus_tag="BC_5075"
+                     /old_locus_tag="BC5075"
+                     /coded_by="complement(AE016877.1:4982430..4982855)"
+                     /transl_table=11
+ORIGIN      
+        1 makkvlkvvk iqlpagkanp appvgtvlgp tgvnimmvck eynaltqgqa gmiipaeiti
+       61 yedrsfsmki ktapvaellk reagiskgsg epnkskigsi teeklreiae ykfpdmnaas
+      121 veaamrtieg tarsmgitvq k
+//
+

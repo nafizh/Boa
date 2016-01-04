@@ -1,0 +1,95 @@
+LOCUS       ADZ63255                 229 aa            linear   BCT 10-FEB-2015
+DEFINITION  nisin biosynthesis two-component system, response regulator NisR
+            [Lactococcus lactis subsp. lactis CV56].
+ACCESSION   ADZ63255
+VERSION     ADZ63255.1  GI:326406184
+DBLINK      BioProject: PRJNA60377
+            BioSample: SAMN02603398
+DBSOURCE    accession CP002365.1
+KEYWORDS    .
+SOURCE      Lactococcus lactis subsp. lactis CV56
+  ORGANISM  Lactococcus lactis subsp. lactis CV56
+            Bacteria; Firmicutes; Bacilli; Lactobacillales; Streptococcaceae;
+            Lactococcus.
+REFERENCE   1  (residues 1 to 229)
+  AUTHORS   Gao,Y., Lu,Y., Teng,K.L., Chen,M.L., Zheng,H.J., Zhu,Y.Q. and
+            Zhong,J.
+  TITLE     Complete Genome Sequence of Lactococcus lactis subsp. lactis CV56,
+            a Probiotic Strain Isolated from the Vaginas of Healthy Women
+  JOURNAL   J. Bacteriol. 193 (11), 2886-2887 (2011)
+   PUBMED   21460077
+REFERENCE   2  (residues 1 to 229)
+  AUTHORS   Gao,Y., Lu,Y., Teng,K. and Zhong,J.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (23-NOV-2010) Molecular Genetic of Lactis Acid Bacteria,
+            Institute of Microbiology, Chinese Academy of Sciences, A601 1-3
+            West Beichen Road, Institute of Microbiology, Beijing 100101, China
+COMMENT     Bacterial Strain CV56 available from Dr. Jin Zhong
+            (zhongj@im.ac.cn) at Institute of Microbiology, Chinese Academy of
+            Sciences.
+            Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..229
+                     /organism="Lactococcus lactis subsp. lactis CV56"
+                     /strain="CV56"
+                     /isolation_source="vagina of healthy women"
+                     /host="Homo sapiens"
+                     /sub_species="lactis"
+                     /db_xref="taxon:929102"
+     Protein         1..229
+                     /product="nisin biosynthesis two-component system,
+                     response regulator NisR"
+     Region          3..227
+                     /region_name="OmpR"
+                     /note="Response regulators consisting of a CheY-like
+                     receiver domain and a winged-helix DNA-binding domain
+                     [Signal transduction mechanisms / Transcription]; COG0745"
+                     /db_xref="CDD:223816"
+     Region          6..115
+                     /region_name="REC"
+                     /note="Signal receiver domain; originally thought to be
+                     unique to bacteria (CheY, OmpR, NtrC, and PhoB), now
+                     recently identified in eukaroytes ETR1 Arabidopsis
+                     thaliana; this domain receives the signal from the sensor
+                     partner in a two-component systems; cd00156"
+                     /db_xref="CDD:238088"
+     Site            order(9..10,53,61,80,99,102..103)
+                     /site_type="active"
+                     /db_xref="CDD:238088"
+     Site            53
+                     /site_type="phosphorylation"
+                     /note="phosphorylation site [posttranslational
+                     modification]"
+                     /db_xref="CDD:238088"
+     Site            order(56..57,59..61)
+                     /site_type="other"
+                     /note="intermolecular recognition site"
+                     /db_xref="CDD:238088"
+     Site            102..104
+                     /site_type="other"
+                     /note="dimerization interface [polypeptide binding]"
+                     /db_xref="CDD:238088"
+     Region          137..227
+                     /region_name="trans_reg_C"
+                     /note="Effector domain of response regulator. Bacteria and
+                     certain eukaryotes like protozoa and higher plants use
+                     two-component signal transduction systems to detect and
+                     respond to changes in the environment. The system consists
+                     of a sensor histidine kinase and...; cd00383"
+                     /db_xref="CDD:238225"
+     Site            order(159,178..179,197,200,208..209,219,224)
+                     /site_type="DNA binding"
+                     /note="DNA binding site [nucleotide binding]"
+                     /db_xref="CDD:238225"
+     CDS             1..229
+                     /gene="nisR"
+                     /locus_tag="CVCAS_0593"
+                     /coded_by="CP002365.1:613849..614538"
+                     /transl_table=11
+ORIGIN      
+        1 mvykilivdd dqeilklmkt alemrnyeva thqnislpld itdfqgfdli lldimmsnie
+       61 gteickrirr eistpiifvs akdteediin glgiggddyi tkpfslkqlv akveanikre
+      121 ernkhavhvf seirrdlgpi tfyleerrvc vngqtipltc reydilells qrtskvytre
+      181 diyddvydey snalfrsise yiyqirskfa pydinpiktv rglgyqwhg
+//
+

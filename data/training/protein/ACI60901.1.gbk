@@ -1,0 +1,64 @@
+LOCUS       ACI60901                 375 aa            linear   BCT 31-JAN-2014
+DEFINITION  Streptolysin S export transmembrane protein (SagH) [Streptococcus
+            pyogenes NZ131].
+ACCESSION   ACI60901
+VERSION     ACI60901.1  GI:209540325
+DBLINK      BioProject: PRJNA20707
+            BioSample: SAMN02604236
+DBSOURCE    accession CP000829.1
+KEYWORDS    .
+SOURCE      Streptococcus pyogenes NZ131
+  ORGANISM  Streptococcus pyogenes NZ131
+            Bacteria; Firmicutes; Bacilli; Lactobacillales; Streptococcaceae;
+            Streptococcus.
+REFERENCE   1  (residues 1 to 375)
+  AUTHORS   McShan,W.M., Ferretti,J.J., Karasawa,T., Suvorov,A.N., Lin,S.,
+            Qin,B., Jia,H., Kenton,S., Najar,F., Wu,H., Scott,J., Roe,B.A. and
+            Savic,D.J.
+  TITLE     Genome sequence of a nephritogenic and highly transformable M49
+            strain of Streptococcus pyogenes
+  JOURNAL   J. Bacteriol. 190 (23), 7773-7785 (2008)
+   PUBMED   18820018
+REFERENCE   2  (residues 1 to 375)
+  AUTHORS   McShan,W.M.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (13-SEP-2007) Pharmaceutical Sciences, University of
+            Oklahoma Health Sciences Center, P.O. Box 26901, Oklahoma City, OK
+            73190, USA
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..375
+                     /organism="Streptococcus pyogenes NZ131"
+                     /strain="NZ131; ATCC BAA-1633"
+                     /serotype="M49"
+                     /culture_collection="ATCC:BAA-1633"
+                     /db_xref="taxon:471876"
+                     /focus
+     Protein         1..375
+                     /product="Streptolysin S export transmembrane protein
+                     (SagH)"
+     Region          1..367
+                     /region_name="NatB"
+                     /note="ABC-type Na+ efflux pump, permease component
+                     [Energy production and conversion / Inorganic ion
+                     transport and metabolism]; COG1668"
+                     /db_xref="CDD:224582"
+     Region          <186..340
+                     /region_name="ABC2_membrane"
+                     /note="ABC-2 type transporter; cl21474"
+                     /db_xref="CDD:276315"
+     CDS             1..375
+                     /gene="sagH"
+                     /locus_tag="Spy49_0576"
+                     /coded_by="CP000829.1:575856..576983"
+                     /transl_table=11
+ORIGIN      
+        1 mvlfhlikke slqifrnrta llmmvifpil mivilsfafk ssfntattvp kltiryqleg
+       61 ektdyqknfl aflkvlnqkl hleakpsnsl ekdrqrvseg altavlevkk nqtikvitnn
+      121 inqqnadlin mlvknyvdna ktydsiaaly pqqlnhirkr svdyvkvssi qtskgmtsad
+      181 yyaismftmi tfysmmsamn lvlsdrqqri tnrihltgvs psllvfgkli gamlattvql
+      241 sllyiftrfv lrvnwgtnew mligitaslv ylsvaigigl gisiknevfl tvasntiipi
+      301 faflggsyvp lttlhssiin qlsnispikw vndslfylif ggqynpipvt livnisigti
+      361 fiilsligmr kqvtt
+//
+

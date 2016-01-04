@@ -1,0 +1,50 @@
+LOCUS       ACI61841                  48 aa            linear   BCT 31-JAN-2014
+DEFINITION  Lantibiotic salivaricin A precursor [Streptococcus pyogenes NZ131].
+ACCESSION   ACI61841
+VERSION     ACI61841.1  GI:209541265
+DBLINK      BioProject: PRJNA20707
+            BioSample: SAMN02604236
+DBSOURCE    accession CP000829.1
+KEYWORDS    .
+SOURCE      Streptococcus pyogenes NZ131
+  ORGANISM  Streptococcus pyogenes NZ131
+            Bacteria; Firmicutes; Bacilli; Lactobacillales; Streptococcaceae;
+            Streptococcus.
+REFERENCE   1  (residues 1 to 48)
+  AUTHORS   McShan,W.M., Ferretti,J.J., Karasawa,T., Suvorov,A.N., Lin,S.,
+            Qin,B., Jia,H., Kenton,S., Najar,F., Wu,H., Scott,J., Roe,B.A. and
+            Savic,D.J.
+  TITLE     Genome sequence of a nephritogenic and highly transformable M49
+            strain of Streptococcus pyogenes
+  JOURNAL   J. Bacteriol. 190 (23), 7773-7785 (2008)
+   PUBMED   18820018
+REFERENCE   2  (residues 1 to 48)
+  AUTHORS   McShan,W.M.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (13-SEP-2007) Pharmaceutical Sciences, University of
+            Oklahoma Health Sciences Center, P.O. Box 26901, Oklahoma City, OK
+            73190, USA
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..48
+                     /organism="Streptococcus pyogenes NZ131"
+                     /strain="NZ131; ATCC BAA-1633"
+                     /serotype="M49"
+                     /culture_collection="ATCC:BAA-1633"
+                     /db_xref="taxon:471876"
+                     /focus
+     Protein         1..48
+                     /product="Lantibiotic salivaricin A precursor"
+     Region          1..48
+                     /region_name="L_biotic_typeA"
+                     /note="Type-A lantibiotic; pfam04604"
+                     /db_xref="CDD:252696"
+     CDS             1..48
+                     /gene="salA"
+                     /locus_tag="Spy49_1583c"
+                     /coded_by="complement(CP000829.1:1562951..1563097)"
+                     /transl_table=11
+ORIGIN      
+        1 mknskdiltn aieevsekel mevaggkkgs gwfatitddc pnsvfvcc
+//
+

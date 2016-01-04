@@ -1,0 +1,57 @@
+LOCUS       ACI60896                 352 aa            linear   BCT 31-JAN-2014
+DEFINITION  Streptolysin S biosynthesis protein C (SagC) [Streptococcus
+            pyogenes NZ131].
+ACCESSION   ACI60896
+VERSION     ACI60896.1  GI:209540320
+DBLINK      BioProject: PRJNA20707
+            BioSample: SAMN02604236
+DBSOURCE    accession CP000829.1
+KEYWORDS    .
+SOURCE      Streptococcus pyogenes NZ131
+  ORGANISM  Streptococcus pyogenes NZ131
+            Bacteria; Firmicutes; Bacilli; Lactobacillales; Streptococcaceae;
+            Streptococcus.
+REFERENCE   1  (residues 1 to 352)
+  AUTHORS   McShan,W.M., Ferretti,J.J., Karasawa,T., Suvorov,A.N., Lin,S.,
+            Qin,B., Jia,H., Kenton,S., Najar,F., Wu,H., Scott,J., Roe,B.A. and
+            Savic,D.J.
+  TITLE     Genome sequence of a nephritogenic and highly transformable M49
+            strain of Streptococcus pyogenes
+  JOURNAL   J. Bacteriol. 190 (23), 7773-7785 (2008)
+   PUBMED   18820018
+REFERENCE   2  (residues 1 to 352)
+  AUTHORS   McShan,W.M.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (13-SEP-2007) Pharmaceutical Sciences, University of
+            Oklahoma Health Sciences Center, P.O. Box 26901, Oklahoma City, OK
+            73190, USA
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..352
+                     /organism="Streptococcus pyogenes NZ131"
+                     /strain="NZ131; ATCC BAA-1633"
+                     /serotype="M49"
+                     /culture_collection="ATCC:BAA-1633"
+                     /db_xref="taxon:471876"
+                     /focus
+     Protein         1..352
+                     /product="Streptolysin S biosynthesis protein C (SagC)"
+     Region          25..351
+                     /region_name="cyclo_dehy_ocin"
+                     /note="thiazole/oxazole-forming peptide maturase, SagC
+                     family component; TIGR03603"
+                     /db_xref="CDD:200298"
+     CDS             1..352
+                     /gene="sagC"
+                     /locus_tag="Spy49_0570"
+                     /coded_by="CP000829.1:571139..572197"
+                     /transl_table=11
+ORIGIN      
+        1 mkyqlnsnvr vvtfqdtfcf rkgiwdfnea ildltqepqn lkivyqeivs qlvkgvaidt
+       61 etyentlepe tfanlmevis glyyndmlml eddynleenv mkilmgnfrf maqaghmvsn
+      121 dpvlfisdst yvnesaella eqlhlqlqva sddlkmliqq tdvssrldal ehrrnmncls
+      181 ealcdyqsii icqerlnimm lrhlnevsva mkkqlvigfv dgpflhtctl npphsadfds
+      241 lerrvlarlq dstlyqhfan qvlpatqdvs qaylpllnvl mnlvvseafi iaqtgssnfe
+      301 grllsiylpt leiqvqdilk msnsqtqgal aklkyedqqi streivkkll de
+//
+

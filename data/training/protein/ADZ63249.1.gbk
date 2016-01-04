@@ -1,0 +1,52 @@
+LOCUS       ADZ63249                  57 aa            linear   BCT 10-FEB-2015
+DEFINITION  nisin precursor NisinA [Lactococcus lactis subsp. lactis CV56].
+ACCESSION   ADZ63249
+VERSION     ADZ63249.1  GI:326406178
+DBLINK      BioProject: PRJNA60377
+            BioSample: SAMN02603398
+DBSOURCE    accession CP002365.1
+KEYWORDS    .
+SOURCE      Lactococcus lactis subsp. lactis CV56
+  ORGANISM  Lactococcus lactis subsp. lactis CV56
+            Bacteria; Firmicutes; Bacilli; Lactobacillales; Streptococcaceae;
+            Lactococcus.
+REFERENCE   1  (residues 1 to 57)
+  AUTHORS   Gao,Y., Lu,Y., Teng,K.L., Chen,M.L., Zheng,H.J., Zhu,Y.Q. and
+            Zhong,J.
+  TITLE     Complete Genome Sequence of Lactococcus lactis subsp. lactis CV56,
+            a Probiotic Strain Isolated from the Vaginas of Healthy Women
+  JOURNAL   J. Bacteriol. 193 (11), 2886-2887 (2011)
+   PUBMED   21460077
+REFERENCE   2  (residues 1 to 57)
+  AUTHORS   Gao,Y., Lu,Y., Teng,K. and Zhong,J.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (23-NOV-2010) Molecular Genetic of Lactis Acid Bacteria,
+            Institute of Microbiology, Chinese Academy of Sciences, A601 1-3
+            West Beichen Road, Institute of Microbiology, Beijing 100101, China
+COMMENT     Bacterial Strain CV56 available from Dr. Jin Zhong
+            (zhongj@im.ac.cn) at Institute of Microbiology, Chinese Academy of
+            Sciences.
+            Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..57
+                     /organism="Lactococcus lactis subsp. lactis CV56"
+                     /strain="CV56"
+                     /isolation_source="vagina of healthy women"
+                     /host="Homo sapiens"
+                     /sub_species="lactis"
+                     /db_xref="taxon:929102"
+     Protein         1..57
+                     /product="nisin precursor NisinA"
+     Region          1..50
+                     /region_name="Lantibiotic_mutacin-1140"
+                     /note="lantibiotic, gallidermin/nisin family; TIGR03731"
+                     /db_xref="CDD:274753"
+     CDS             1..57
+                     /gene="nisA"
+                     /locus_tag="CVCAS_0587"
+                     /coded_by="CP002365.1:604687..604860"
+                     /transl_table=11
+ORIGIN      
+        1 mstkdfnldl vsvskkdsga spritsislc tpgcktgalm gcnmktatch csihvsk
+//
+

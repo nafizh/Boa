@@ -1,0 +1,52 @@
+LOCUS       CAA72917                 105 aa            linear   BCT 18-APR-2005
+DEFINITION  AS-48 protein [Enterococcus faecalis].
+ACCESSION   CAA72917
+VERSION     CAA72917.1  GI:2664257
+DBSOURCE    embl accession Y12234.1
+KEYWORDS    .
+SOURCE      Enterococcus faecalis
+  ORGANISM  Enterococcus faecalis
+            Bacteria; Firmicutes; Bacilli; Lactobacillales; Enterococcaceae;
+            Enterococcus.
+REFERENCE   1
+  AUTHORS   Martinez-Bueno,M., Valdivia,E., Galvez,A., Coyette,J. and
+            Maqueda,M.
+  TITLE     Analysis of the gene cluster involved in production and immunity of
+            the peptide antibiotic AS-48 in Enterococcus faecalis
+  JOURNAL   Mol. Microbiol. 27 (2), 347-358 (1998)
+   PUBMED   9484890
+REFERENCE   2  (residues 1 to 105)
+  AUTHORS   Martinez-Bueno,M.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (02-APR-1997) M. Martinez-Bueno, University of Granada,
+            Microbiology, Facultad de Ciencias, Fuentenueva S/N, 18071-Granada,
+            SPAIN
+FEATURES             Location/Qualifiers
+     source          1..105
+                     /organism="Enterococcus faecalis"
+                     /strain="S-48"
+                     /sub_species="liquefaciens"
+                     /db_xref="taxon:1351"
+     Protein         1..105
+                     /product="AS-48 protein"
+     Region          34..105
+                     /region_name="possible_peptide_antibiotic_precursor?"
+                     /note="circular bacteriocin, circularin A/uberolysin
+                     family; TIGR03651"
+                     /db_xref="CDD:274700"
+     CDS             1..105
+                     /gene="as-48"
+                     /coded_by="Y12234.1:70..387"
+                     /transl_table=11
+                     /db_xref="InterPro:IPR009086"
+                     /db_xref="InterPro:IPR020038"
+                     /db_xref="PDB:1E68"
+                     /db_xref="PDB:1O82"
+                     /db_xref="PDB:1O83"
+                     /db_xref="PDB:1O84"
+                     /db_xref="UniProtKB/TrEMBL:Q47765"
+ORIGIN      
+        1 mvkenkfski filmalsflg lalfsaslqf lpiahmakef gipaavagtv lnvveaggwv
+       61 ttivsiltav gsgglsllaa agresikayl kkeikkkgkr aviaw
+//
+

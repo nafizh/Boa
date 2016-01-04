@@ -1,0 +1,43 @@
+LOCUS       CAA72920                 164 aa            linear   BCT 18-APR-2005
+DEFINITION  AS-48C1 protein [Enterococcus faecalis].
+ACCESSION   CAA72920
+VERSION     CAA72920.1  GI:2664260
+DBSOURCE    embl accession Y12234.1
+KEYWORDS    .
+SOURCE      Enterococcus faecalis
+  ORGANISM  Enterococcus faecalis
+            Bacteria; Firmicutes; Bacilli; Lactobacillales; Enterococcaceae;
+            Enterococcus.
+REFERENCE   1
+  AUTHORS   Martinez-Bueno,M., Valdivia,E., Galvez,A., Coyette,J. and
+            Maqueda,M.
+  TITLE     Analysis of the gene cluster involved in production and immunity of
+            the peptide antibiotic AS-48 in Enterococcus faecalis
+  JOURNAL   Mol. Microbiol. 27 (2), 347-358 (1998)
+   PUBMED   9484890
+REFERENCE   2  (residues 1 to 164)
+  AUTHORS   Martinez-Bueno,M.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (02-APR-1997) M. Martinez-Bueno, University of Granada,
+            Microbiology, Facultad de Ciencias, Fuentenueva S/N, 18071-Granada,
+            SPAIN
+FEATURES             Location/Qualifiers
+     source          1..164
+                     /organism="Enterococcus faecalis"
+                     /strain="S-48"
+                     /sub_species="liquefaciens"
+                     /db_xref="taxon:1351"
+     Protein         1..164
+                     /product="AS-48C1 protein"
+                     /function="putative ABC transporter"
+     CDS             1..164
+                     /gene="as-48C1"
+                     /coded_by="Y12234.1:3041..3535"
+                     /transl_table=11
+                     /db_xref="UniProtKB/TrEMBL:O53026"
+ORIGIN      
+        1 mhkftlkkci gitslfflfs niliaeefif veknlsffpk lgiivlvffm sapaffvvtl
+       61 iltcliafli tlinkfysfk rvylstlfin siqlfvnlal fsaflhynln lrllsimsfm
+      121 iniflvaiyr nllikfanvn sraanvlsif givlsiiylv vgvk
+//
+

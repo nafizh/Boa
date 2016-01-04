@@ -1,0 +1,53 @@
+LOCUS       CAD27714                 169 aa            linear   BCT 15-APR-2005
+DEFINITION  membrane subunit (plasmid) [Enterococcus faecalis subsp.
+            liquefaciens].
+ACCESSION   CAD27714
+VERSION     CAD27714.1  GI:19577294
+DBSOURCE    embl accession AJ438950.1
+KEYWORDS    .
+SOURCE      Enterococcus faecalis subsp. liquefaciens
+  ORGANISM  Enterococcus faecalis subsp. liquefaciens
+            Bacteria; Firmicutes; Bacilli; Lactobacillales; Enterococcaceae;
+            Enterococcus.
+REFERENCE   1
+  AUTHORS   Martinez-Bueno,M., Valdivia,E., Galvez,A., Coyette,J. and
+            Maqueda,M.
+  TITLE     Analysis of the gene cluster involved in production and immunity of
+            the peptide antibiotic AS-48 in Enterococcus faecalis
+  JOURNAL   Mol. Microbiol. 27 (2), 347-358 (1998)
+   PUBMED   9484890
+REFERENCE   2
+  AUTHORS   Diaz,M., Valdivia,E., Martinez-Bueno,M., Fernandez,M.,
+            Soler-Gonzalez,A.S., Ramirez-Rodrigo,H. and Maqueda,M.
+  TITLE     Characterization of a new operon, as-48EFGH, from the as-48 gene
+            cluster involved in immunity to enterocin AS-48
+  JOURNAL   Appl. Environ. Microbiol. 69 (2), 1229-1236 (2003)
+   PUBMED   12571051
+REFERENCE   3  (residues 1 to 169)
+  AUTHORS   Martinez-Bueno,M.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (12-MAR-2002) Martinez-Bueno M., Microbiology, University
+            of Granada, Fuentenueva s/n, 18071-Granada, SPAIN
+FEATURES             Location/Qualifiers
+     source          1..169
+                     /organism="Enterococcus faecalis subsp. liquefaciens"
+                     /isolation_source="clinical isolate"
+                     /sub_species="liquefaciens"
+                     /db_xref="taxon:44244"
+                     /plasmid="pMB2"
+                     /country="Spain:Granada"
+     Protein         1..169
+                     /product="membrane subunit"
+                     /function="membrane spanning domain of ABC transporter"
+     CDS             1..169
+                     /gene="as-48E"
+                     /coded_by="AJ438950.1:150..659"
+                     /note="involved in resistance to antibiotic AS-48"
+                     /transl_table=11
+                     /db_xref="UniProtKB/TrEMBL:Q7AUQ5"
+ORIGIN      
+        1 mndykkevkk ikiwnlialv lisigtifsi iglpsalnpn ekiytsigsd gmdiynqlns
+       61 mpvkvftvln vlfsiafvil ffishrkikk dqipvkypyy lnlgwtvvsi ifsllttpsf
+      121 tnasetqsig liigittiif tlvfklpvim vlvylfkvnt gendiekvn
+//
+

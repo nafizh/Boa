@@ -1,0 +1,59 @@
+LOCUS       ACI60897                 452 aa            linear   BCT 31-JAN-2014
+DEFINITION  Streptolysin S biosynthesis protein D (SagD) [Streptococcus
+            pyogenes NZ131].
+ACCESSION   ACI60897
+VERSION     ACI60897.1  GI:209540321
+DBLINK      BioProject: PRJNA20707
+            BioSample: SAMN02604236
+DBSOURCE    accession CP000829.1
+KEYWORDS    .
+SOURCE      Streptococcus pyogenes NZ131
+  ORGANISM  Streptococcus pyogenes NZ131
+            Bacteria; Firmicutes; Bacilli; Lactobacillales; Streptococcaceae;
+            Streptococcus.
+REFERENCE   1  (residues 1 to 452)
+  AUTHORS   McShan,W.M., Ferretti,J.J., Karasawa,T., Suvorov,A.N., Lin,S.,
+            Qin,B., Jia,H., Kenton,S., Najar,F., Wu,H., Scott,J., Roe,B.A. and
+            Savic,D.J.
+  TITLE     Genome sequence of a nephritogenic and highly transformable M49
+            strain of Streptococcus pyogenes
+  JOURNAL   J. Bacteriol. 190 (23), 7773-7785 (2008)
+   PUBMED   18820018
+REFERENCE   2  (residues 1 to 452)
+  AUTHORS   McShan,W.M.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (13-SEP-2007) Pharmaceutical Sciences, University of
+            Oklahoma Health Sciences Center, P.O. Box 26901, Oklahoma City, OK
+            73190, USA
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..452
+                     /organism="Streptococcus pyogenes NZ131"
+                     /strain="NZ131; ATCC BAA-1633"
+                     /serotype="M49"
+                     /culture_collection="ATCC:BAA-1633"
+                     /db_xref="taxon:471876"
+                     /focus
+     Protein         1..452
+                     /product="Streptolysin S biosynthesis protein D (SagD)"
+     Region          69..452
+                     /region_name="hypothetical_protein"
+                     /note="thiazole/oxazole-forming peptide maturase, SagD
+                     family component; TIGR03604"
+                     /db_xref="CDD:274674"
+     CDS             1..452
+                     /gene="sagD"
+                     /locus_tag="Spy49_0572"
+                     /coded_by="CP000829.1:572217..573575"
+                     /transl_table=11
+ORIGIN      
+        1 mlyyypsfnh ifdelkslsg nrtgilnqsq vpvcnhphdv ylksitgqmp dyhkqfigel
+       61 sqvsyhiigy gsyyeealik ylgesierya tviagdllsd rivyasynel kllhkvmple
+      121 ylqvftqeqi alscdlqmmm cdkmvtendv lgwvkcpmff edaemyvpaq mlcvgyktne
+      181 tvgerriipg fstgtashkt leaamcnsli eyiqidsmml swytkkpcpk iivddpdiev
+      241 ileearlgkd slydiipidm tvgednplyt fgiilknkyd egpyllfgvq agldpkhall
+      301 rgimeasais ysyyynllyq kaslaniece eplfldldsn vfyyahpkdq dhkwkafepl
+      361 isgevllsdl edhsgkdkke dlktllayak kvspnavfld itppealekg wyvtrvlmpe
+      421 llemcipafp fanhprmrqf ggvtnafvhp mp
+//
+

@@ -1,0 +1,70 @@
+LOCUS       ADZ63252                 418 aa            linear   BCT 10-FEB-2015
+DEFINITION  nisin biosynthesis protein NisC [Lactococcus lactis subsp. lactis
+            CV56].
+ACCESSION   ADZ63252
+VERSION     ADZ63252.1  GI:326406181
+DBLINK      BioProject: PRJNA60377
+            BioSample: SAMN02603398
+DBSOURCE    accession CP002365.1
+KEYWORDS    .
+SOURCE      Lactococcus lactis subsp. lactis CV56
+  ORGANISM  Lactococcus lactis subsp. lactis CV56
+            Bacteria; Firmicutes; Bacilli; Lactobacillales; Streptococcaceae;
+            Lactococcus.
+REFERENCE   1  (residues 1 to 418)
+  AUTHORS   Gao,Y., Lu,Y., Teng,K.L., Chen,M.L., Zheng,H.J., Zhu,Y.Q. and
+            Zhong,J.
+  TITLE     Complete Genome Sequence of Lactococcus lactis subsp. lactis CV56,
+            a Probiotic Strain Isolated from the Vaginas of Healthy Women
+  JOURNAL   J. Bacteriol. 193 (11), 2886-2887 (2011)
+   PUBMED   21460077
+REFERENCE   2  (residues 1 to 418)
+  AUTHORS   Gao,Y., Lu,Y., Teng,K. and Zhong,J.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (23-NOV-2010) Molecular Genetic of Lactis Acid Bacteria,
+            Institute of Microbiology, Chinese Academy of Sciences, A601 1-3
+            West Beichen Road, Institute of Microbiology, Beijing 100101, China
+COMMENT     Bacterial Strain CV56 available from Dr. Jin Zhong
+            (zhongj@im.ac.cn) at Institute of Microbiology, Chinese Academy of
+            Sciences.
+            Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..418
+                     /organism="Lactococcus lactis subsp. lactis CV56"
+                     /strain="CV56"
+                     /isolation_source="vagina of healthy women"
+                     /host="Homo sapiens"
+                     /sub_species="lactis"
+                     /db_xref="taxon:929102"
+     Protein         1..418
+                     /product="nisin biosynthesis protein NisC"
+     Region          40..404
+                     /region_name="LanC"
+                     /note="LanC is the cyclase enzyme of the lanthionine
+                     synthetase. Lanthinoine is a lantibiotic, a unique class
+                     of peptide antibiotics. They are ribosomally synthesized
+                     as precursor peptides and then post-translationally
+                     modified to contain thioether cross-links...; cd04793"
+                     /db_xref="CDD:240110"
+     Site            order(212,284,330..331)
+                     /site_type="active"
+                     /db_xref="CDD:240110"
+     Site            order(284,330..331)
+                     /site_type="other"
+                     /note="zinc binding site [ion binding]"
+                     /db_xref="CDD:240110"
+     CDS             1..418
+                     /gene="nisC"
+                     /locus_tag="CVCAS_0590"
+                     /coded_by="CP002365.1:609743..610999"
+                     /transl_table=11
+ORIGIN      
+        1 mrimmnkkni krnvekiiaq wdertrknke nfdfgeltls tglpgiilml aelknkdnsk
+       61 iyqkkidnyi eyivsklsty glltgslysg aagialsilh lreddekykn lldslnryie
+      121 yfvrekiegf nlenitppdy dvieglsgil sylllindeq yddlkiliin flsnltkenn
+      181 glislyikse nqmsqsesem yplgclnmgl ahglagvgci layahikgys neaslsalqk
+      241 iifiyekfel erkkqflwkd glvadelkke kvireasfir dawcyggpgi sllylyggla
+      301 ldndyfvdka ekilesamqr klgidsymic hgysglieic slfkrllntk kfdsymeefn
+      361 vnseqileey gdesgtgfle gisgcilvls kfeysinfty wrqalllfdd flkggkrk
+//
+

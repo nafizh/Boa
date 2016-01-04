@@ -1,0 +1,79 @@
+LOCUS       AAP11940                 400 aa            linear   BCT 30-JAN-2014
+DEFINITION  Macrolide-efflux protein [Bacillus cereus ATCC 14579].
+ACCESSION   AAP11940
+VERSION     AAP11940.1  GI:29898668
+DBLINK      BioProject: PRJNA384
+            BioSample: SAMN02603340
+DBSOURCE    accession AE016877.1
+KEYWORDS    .
+SOURCE      Bacillus cereus ATCC 14579
+  ORGANISM  Bacillus cereus ATCC 14579
+            Bacteria; Firmicutes; Bacilli; Bacillales; Bacillaceae; Bacillus;
+            Bacillus cereus group.
+REFERENCE   1  (residues 1 to 400)
+  AUTHORS   Ivanova,N., Sorokin,A., Anderson,I., Galleron,N., Candelon,B.,
+            Kapatral,V., Bhattacharyya,A., Reznik,G., Mikhailova,N.,
+            Lapidus,A., Chu,L., Mazur,M., Goltsman,E., Larsen,N., D'Souza,M.,
+            Walunas,T., Grechkin,Y., Pusch,G., Haselkorn,R., Fonstein,M.,
+            Ehrlich,S.D., Overbeek,R. and Kyrpides,N.
+  TITLE     Genome sequence of Bacillus cereus and comparative analysis with
+            Bacillus anthracis
+  JOURNAL   Nature 423 (6935), 87-91 (2003)
+   PUBMED   12721630
+REFERENCE   2  (residues 1 to 400)
+  AUTHORS   Candelon,B., Gailloux,K., Ehrlich,D.S. and Sorokin,A.
+  TITLE     The number of ribosomal RNA operons in Bacillus cereus
+  JOURNAL   Unpublished
+REFERENCE   3  (residues 1 to 400)
+  AUTHORS   Ivanova,N., Sorokin,A., Anderson,I., Galleron,N., Candelon,B.,
+            Kapatral,V., Bhattacharyya,A., Reznik,G., Mikhailova,N.,
+            Lapidus,A., Chu,L., Mazur,M., Goltsman,E., Larsen,N., D'Souza,M.,
+            Walunas,T., Grechkin,Y., Pusch,G., Haselkorn,R., Fonstein,M.,
+            Ehrlich,D.S.D., Overbeek,R. and Kyrpides,N.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (12-MAR-2003) INRA, Genetique Microbienne, Domaine de
+            Vilvert, Jouy en Josas 78352, France
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..400
+                     /organism="Bacillus cereus ATCC 14579"
+                     /strain="ATCC 14579"
+                     /db_xref="ATCC:14579"
+                     /db_xref="taxon:226900"
+                     /focus
+     Protein         1..400
+                     /product="Macrolide-efflux protein"
+     Region          13..394
+                     /region_name="MFS"
+                     /note="The Major Facilitator Superfamily (MFS) is a large
+                     and diverse group of secondary transporters that includes
+                     uniporters, symporters, and antiporters. MFS proteins
+                     facilitate the transport across cytoplasmic or internal
+                     membranes of a variety of...; cd06174"
+                     /db_xref="CDD:119392"
+     Region          15..373
+                     /region_name="multidrug_transporter"
+                     /note="H+ Antiporter protein; TIGR00900"
+                     /db_xref="CDD:162098"
+     Site            order(27,30..32,34..35,52,55..56,59,63..64,66..67,
+                     118..119,122..123,126..127,130,142..143,146..147,153,232,
+                     235..236,239..240,243,257,261,265,268,272,320,323..324,
+                     327,331..332,335,346..347,350..351,354..355,358)
+                     /site_type="other"
+                     /note="putative substrate translocation pore"
+                     /db_xref="CDD:119392"
+     CDS             1..400
+                     /locus_tag="BC_5071"
+                     /old_locus_tag="BC5071"
+                     /coded_by="complement(AE016877.1:4977297..4978499)"
+                     /transl_table=11
+ORIGIN      
+        1 mkhmsennwk tkiilfltaq tisllgsslv qyaiiwyitl ttssgvmlti stvcgflpqi
+       61 aislfagvwi drydrkkmim lsdgiiaiat lvlailfltg yksiwllfiv llirsagtgv
+      121 qtpavnalip qivpkeylmk vnginssits limflspaas aailsiasie ttffidvita
+      181 migisimlii qveghvnaen kqksnlqgik egfsylkenv fikrlivlli iimilispaa
+      241 fltplmvtrs fgaemwrlta semtfsagaa aggvliaawg gfrnrmhtta lacalygllm
+      301 iglgiapifi mylvfnflig itmpcfntpv tvllqekvep smhgrmfslv qianscalpl
+      361 gmiifgplsd mfsveilliy agifvlfcam yivlskrfev
+//
+

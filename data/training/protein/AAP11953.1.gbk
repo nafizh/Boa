@@ -1,0 +1,76 @@
+LOCUS       AAP11953                 871 aa            linear   BCT 30-JAN-2014
+DEFINITION  Lanthionine biosynthesis protein [Bacillus cereus ATCC 14579].
+ACCESSION   AAP11953
+VERSION     AAP11953.1  GI:29898681
+DBLINK      BioProject: PRJNA384
+            BioSample: SAMN02603340
+DBSOURCE    accession AE016877.1
+KEYWORDS    .
+SOURCE      Bacillus cereus ATCC 14579
+  ORGANISM  Bacillus cereus ATCC 14579
+            Bacteria; Firmicutes; Bacilli; Bacillales; Bacillaceae; Bacillus;
+            Bacillus cereus group.
+REFERENCE   1  (residues 1 to 871)
+  AUTHORS   Ivanova,N., Sorokin,A., Anderson,I., Galleron,N., Candelon,B.,
+            Kapatral,V., Bhattacharyya,A., Reznik,G., Mikhailova,N.,
+            Lapidus,A., Chu,L., Mazur,M., Goltsman,E., Larsen,N., D'Souza,M.,
+            Walunas,T., Grechkin,Y., Pusch,G., Haselkorn,R., Fonstein,M.,
+            Ehrlich,S.D., Overbeek,R. and Kyrpides,N.
+  TITLE     Genome sequence of Bacillus cereus and comparative analysis with
+            Bacillus anthracis
+  JOURNAL   Nature 423 (6935), 87-91 (2003)
+   PUBMED   12721630
+REFERENCE   2  (residues 1 to 871)
+  AUTHORS   Candelon,B., Gailloux,K., Ehrlich,D.S. and Sorokin,A.
+  TITLE     The number of ribosomal RNA operons in Bacillus cereus
+  JOURNAL   Unpublished
+REFERENCE   3  (residues 1 to 871)
+  AUTHORS   Ivanova,N., Sorokin,A., Anderson,I., Galleron,N., Candelon,B.,
+            Kapatral,V., Bhattacharyya,A., Reznik,G., Mikhailova,N.,
+            Lapidus,A., Chu,L., Mazur,M., Goltsman,E., Larsen,N., D'Souza,M.,
+            Walunas,T., Grechkin,Y., Pusch,G., Haselkorn,R., Fonstein,M.,
+            Ehrlich,D.S.D., Overbeek,R. and Kyrpides,N.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (12-MAR-2003) INRA, Genetique Microbienne, Domaine de
+            Vilvert, Jouy en Josas 78352, France
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..871
+                     /organism="Bacillus cereus ATCC 14579"
+                     /strain="ATCC 14579"
+                     /db_xref="ATCC:14579"
+                     /db_xref="taxon:226900"
+                     /focus
+     Protein         1..871
+                     /product="Lanthionine biosynthesis protein"
+     Region          143..237
+                     /region_name="Lant_dehyd_N"
+                     /note="Lantibiotic dehydratase, N terminus; pfam04737"
+                     /db_xref="CDD:147079"
+     Region          302..844
+                     /region_name="Lant_dehyd_C"
+                     /note="Lantibiotic dehydratase, C terminus; pfam04738"
+                     /db_xref="CDD:252771"
+     CDS             1..871
+                     /locus_tag="BC_5084"
+                     /old_locus_tag="BC5084"
+                     /coded_by="complement(AE016877.1:4990018..4992633)"
+                     /transl_table=11
+ORIGIN      
+        1 mkpinyvphf lcrisgeein siseiefikt leclelsegi lrkinslsad ltkdlhdcis
+       61 lykeqsisrv linlkrdifn mrfnrvqkyk lenisgfnhd klnlwlnlaq eyqstlhlmr
+      121 etfkmeiqek rgklkqlfsn seyikaiqvs ntqlyenlle ylqdnqshpp kkmrnieqsl
+      181 inylsrmifk ptpfssftgl nygffsqeds sfeintkesk ghtrinmvyl kkiermllnr
+      241 isiknkcyvs lnqtineeen ymffrrgkdg tsqaftgeaf ikikksellk eliqyfegis
+      301 smnivevvsf lsektnyete alynylfkle kmgvldfslg vseqsdnytk dlienllgik
+      361 dslveksvsh lveiekiqai fsesnyqkry vllknlqehi kkiyslfdlk lesndltsll
+      421 fedvsykntk iilnenqwkt hlddfnlikn lmplfddnil eklsmniifk diygnkgaid
+      481 llefyrefnk ydknllwkki rkndtylylk klrtefydyl etqinmgldt iflnkswlkk
+      541 finkfpdllk skenysfyfq iaydnqdnri lvlnkigpgl gkhfsrygnl flnseykenn
+      601 rfinslieqy kkydqnggvl tdlnavlgln lnmhpnllny eitypgcnps kginqvalkd
+      661 ievlydsnsd qlklyskqyr qnvkllplgf lfpalspsly kflcgfsesn gieysfwnkf
+      721 lnehnnnfsl lprimlgsva ldrrtwkina keiqkefskd tfetfinfhk wvkenqlped
+      781 iflrvantmd afsenellnq dlgswiaeik qtkhrkpqyv nfnnyfhida lrkiikdvnn
+      841 tvtiqevyph pddvyyqkns kkcveflvev f
+//
+

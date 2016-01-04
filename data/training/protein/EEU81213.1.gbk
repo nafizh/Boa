@@ -1,0 +1,119 @@
+LOCUS       EEU81213                 714 aa            linear   BCT 12-MAR-2015
+DEFINITION  cytolysin B transporter [Enterococcus faecalis D6].
+ACCESSION   EEU81213
+VERSION     EEU81213.1  GI:256993911
+DBLINK      BioProject: PRJNA32947
+            BioSample: SAMN02595264
+DBSOURCE    accession GG688628.1
+KEYWORDS    .
+SOURCE      Enterococcus faecalis D6
+  ORGANISM  Enterococcus faecalis D6
+            Bacteria; Firmicutes; Bacilli; Lactobacillales; Enterococcaceae;
+            Enterococcus.
+REFERENCE   1  (residues 1 to 714)
+  AUTHORS   Feldgarden,M., Young,S.K., Kodira,C.D., Zeng,Q., Koehrsen,M.,
+            Alvarado,L., Berlin,A., Borenstein,D., Chen,Z., Engels,R.,
+            Freedman,E., Gellesch,M., Goldberg,J., Griggs,A., Gujja,S.,
+            Heiman,D., Hepburn,T., Howarth,C., Jen,D., Larson,L., Lewis,B.,
+            Mehta,T., Park,D., Pearson,M., Roberts,A., Saif,S., Shea,T.,
+            Shenoy,N., Sisk,P., Stolte,C., Sykes,S., Walk,T., White,J.,
+            Yandava,C., Gilmore,M., Manson,J., Palmer,K., Carniol,K.,
+            Lander,E., Nusbaum,C., Galagan,J. and Birren,B.
+  CONSRTM   The Broad Institute Genome Sequencing Platform
+  TITLE     The Genome Sequence of Enterococcus faecalis strain D6
+  JOURNAL   Unpublished
+REFERENCE   2  (residues 1 to 714)
+  AUTHORS   Feldgarden,M., Young,S.K., Kodira,C.D., Zeng,Q., Koehrsen,M.,
+            Alvarado,L., Berlin,A., Borenstein,D., Chen,Z., Engels,R.,
+            Freedman,E., Gellesch,M., Goldberg,J., Griggs,A., Gujja,S.,
+            Heiman,D., Hepburn,T., Howarth,C., Jen,D., Larson,L., Lewis,B.,
+            Mehta,T., Park,D., Pearson,M., Roberts,A., Saif,S., Shea,T.,
+            Shenoy,N., Sisk,P., Stolte,C., Sykes,S., Walk,T., White,J.,
+            Yandava,C., Gilmore,M., Manson,J., Palmer,K., Carniol,K.,
+            Lander,E., Nusbaum,C., Galagan,J. and Birren,B.
+  CONSRTM   The Broad Institute Genome Sequencing Platform
+  TITLE     Direct Submission
+  JOURNAL   Submitted (23-FEB-2009) Broad Institute of MIT and Harvard, 7
+            Cambridge Center, Cambridge, MA 02142, USA
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..714
+                     /organism="Enterococcus faecalis D6"
+                     /strain="D6"
+                     /db_xref="taxon:565650"
+     Protein         1..714
+                     /product="cytolysin B transporter"
+     Region          3..704
+                     /region_name="SunT"
+                     /note="ABC-type bacteriocin/lantibiotic exporters, contain
+                     an N-terminal double-glycine peptidase domain [Defense
+                     mechanisms]; COG2274"
+                     /db_xref="CDD:225183"
+     Region          4..127
+                     /region_name="Peptidase_C39F"
+                     /note="A sub-family of peptidase family C39. Peptidase
+                     family C39 mostly contains bacteriocin-processing
+                     endopeptidases from bacteria. The cysteine peptidases in
+                     family C39 cleave the 'double-glycine' leader peptides
+                     from the precursors of various...; cd02425"
+                     /db_xref="CDD:239105"
+     Site            order(9,15,88,104)
+                     /site_type="active"
+                     /note="putative active site [active]"
+                     /db_xref="CDD:239105"
+     Region          156..425
+                     /region_name="ABC_membrane"
+                     /note="ABC transporter transmembrane region; cl00549"
+                     /db_xref="CDD:271500"
+     Region          472..704
+                     /region_name="ABC_ATPase"
+                     /note="ATP-binding cassette transporter nucleotide-binding
+                     domain; cl21455"
+                     /db_xref="CDD:276299"
+     Site            505..512
+                     /site_type="other"
+                     /note="Walker A/P-loop"
+                     /db_xref="CDD:213179"
+     Site            order(508..509,511..513,551,635..636,665)
+                     /site_type="other"
+                     /note="ATP binding site [chemical binding]"
+                     /db_xref="CDD:213179"
+     Site            548..551
+                     /site_type="other"
+                     /note="Q-loop/lid"
+                     /db_xref="CDD:213179"
+     Site            611..620
+                     /site_type="other"
+                     /note="ABC transporter signature motif"
+                     /db_xref="CDD:213179"
+     Site            631..636
+                     /site_type="other"
+                     /note="Walker B"
+                     /db_xref="CDD:213179"
+     Site            639..642
+                     /site_type="other"
+                     /note="D-loop"
+                     /db_xref="CDD:213179"
+     Site            661..667
+                     /site_type="other"
+                     /note="H-loop/switch region"
+                     /db_xref="CDD:213179"
+     CDS             1..714
+                     /locus_tag="EFLG_01816"
+                     /coded_by="GG688628.1:196043..198187"
+                     /transl_table=11
+ORIGIN      
+        1 mkrlkyvaqg ehsecalaci tmllnyygnq stlvelreky gvpkggltik nirtvfdeyg
+       61 fdvstfkssf snyldlptpv isywnnqhfv viekikkkkv lildpasnkr widisefkkn
+      121 fsniliyahk kktkkegkrk qfflksfift kfkryffsli ilsfvsqlll llipiatkys
+      181 idnirsfqei ptyvlllilt sffsvlyvvq ylkssvvaef qyefdfklmf syidklfsmp
+      241 lmyfsnrstg elvfranlni yirqilsqkv ittlidslfl giylflmvny silltiialv
+      301 lisliaflsi inshtikrfv dkeimeqgnv qriiteaieg ietiksanae ksfllnwknm
+      361 ftsqllitkn knryiaifgi lpeiiqsvmp alfliigikl iinnslslgs ligfvsivtm
+      421 vmkpilslvs syndflllnv yfqklsevlt yeekndfnnk kgnvgkeefi yrvnnvyyti
+      481 svfeknilng isfdirkgdk vaivgrsgsg kstllkllag llqpsngeil yegyplsnns
+      541 nnrrnifyvn qnahifneti eknislefkp nssinekkrl kesmskskmd evllgipqye
+      601 ktivsengsn fsggqrqkia larafysnvn tllldeptsa mdnisefevf snlldekrtv
+      661 itvahristv rnfdkiilmd ngeivcigkh edliensely rslyykkqqf ggtk
+//
+

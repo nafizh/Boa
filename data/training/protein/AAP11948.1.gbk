@@ -1,0 +1,74 @@
+LOCUS       AAP11948                 256 aa            linear   BCT 30-JAN-2014
+DEFINITION  Short chain dehydrogenase [Bacillus cereus ATCC 14579].
+ACCESSION   AAP11948
+VERSION     AAP11948.1  GI:29898676
+DBLINK      BioProject: PRJNA384
+            BioSample: SAMN02603340
+DBSOURCE    accession AE016877.1
+KEYWORDS    .
+SOURCE      Bacillus cereus ATCC 14579
+  ORGANISM  Bacillus cereus ATCC 14579
+            Bacteria; Firmicutes; Bacilli; Bacillales; Bacillaceae; Bacillus;
+            Bacillus cereus group.
+REFERENCE   1  (residues 1 to 256)
+  AUTHORS   Ivanova,N., Sorokin,A., Anderson,I., Galleron,N., Candelon,B.,
+            Kapatral,V., Bhattacharyya,A., Reznik,G., Mikhailova,N.,
+            Lapidus,A., Chu,L., Mazur,M., Goltsman,E., Larsen,N., D'Souza,M.,
+            Walunas,T., Grechkin,Y., Pusch,G., Haselkorn,R., Fonstein,M.,
+            Ehrlich,S.D., Overbeek,R. and Kyrpides,N.
+  TITLE     Genome sequence of Bacillus cereus and comparative analysis with
+            Bacillus anthracis
+  JOURNAL   Nature 423 (6935), 87-91 (2003)
+   PUBMED   12721630
+REFERENCE   2  (residues 1 to 256)
+  AUTHORS   Candelon,B., Gailloux,K., Ehrlich,D.S. and Sorokin,A.
+  TITLE     The number of ribosomal RNA operons in Bacillus cereus
+  JOURNAL   Unpublished
+REFERENCE   3  (residues 1 to 256)
+  AUTHORS   Ivanova,N., Sorokin,A., Anderson,I., Galleron,N., Candelon,B.,
+            Kapatral,V., Bhattacharyya,A., Reznik,G., Mikhailova,N.,
+            Lapidus,A., Chu,L., Mazur,M., Goltsman,E., Larsen,N., D'Souza,M.,
+            Walunas,T., Grechkin,Y., Pusch,G., Haselkorn,R., Fonstein,M.,
+            Ehrlich,D.S.D., Overbeek,R. and Kyrpides,N.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (12-MAR-2003) INRA, Genetique Microbienne, Domaine de
+            Vilvert, Jouy en Josas 78352, France
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..256
+                     /organism="Bacillus cereus ATCC 14579"
+                     /strain="ATCC 14579"
+                     /db_xref="ATCC:14579"
+                     /db_xref="taxon:226900"
+                     /focus
+     Protein         1..256
+                     /product="Short chain dehydrogenase"
+     Region          5..255
+                     /region_name="PRK06841"
+                     /note="short chain dehydrogenase; Provisional"
+                     /db_xref="CDD:180723"
+     Region          14..250
+                     /region_name="SDR_c"
+                     /note="classical (c) SDRs; cd05233"
+                     /db_xref="CDD:212491"
+     Site            order(18,20..23,42..44,70..72,95..97,118,146..148,161,165,
+                     191..194,196..197)
+                     /site_type="other"
+                     /note="NAD(P) binding site [chemical binding]"
+                     /db_xref="CDD:212491"
+     Site            order(119,148,161,165)
+                     /site_type="active"
+                     /db_xref="CDD:212491"
+     CDS             1..256
+                     /locus_tag="BC_5079"
+                     /old_locus_tag="BC5079"
+                     /coded_by="complement(AE016877.1:4984927..4985697)"
+                     /transl_table=11
+ORIGIN      
+        1 mnsikqfnfk nknifitgat sdiaiciaes fsgfggnlil sdtdkqlpkl ehvkqkmiek
+       61 frnnvqivti dlykvndiqn aiekldkpid ilincagnny fvpalevsee nwqkiidvnl
+      121 kgtfflsqsi akkmisdgik gkivnigsqh gvvanglrap yciskfglig ltkvlalews
+      181 tfnilvncvs ptyvktsksk dflehedvkk aylykiplkk yalphdisya vlflssdqnq
+      241 iitgenilvd ggytlh
+//
+

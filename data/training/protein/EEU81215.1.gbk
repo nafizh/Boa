@@ -1,0 +1,70 @@
+LOCUS       EEU81215                 327 aa            linear   BCT 12-MAR-2015
+DEFINITION  CylI [Enterococcus faecalis D6].
+ACCESSION   EEU81215
+VERSION     EEU81215.1  GI:256993913
+DBLINK      BioProject: PRJNA32947
+            BioSample: SAMN02595264
+DBSOURCE    accession GG688628.1
+KEYWORDS    .
+SOURCE      Enterococcus faecalis D6
+  ORGANISM  Enterococcus faecalis D6
+            Bacteria; Firmicutes; Bacilli; Lactobacillales; Enterococcaceae;
+            Enterococcus.
+REFERENCE   1  (residues 1 to 327)
+  AUTHORS   Feldgarden,M., Young,S.K., Kodira,C.D., Zeng,Q., Koehrsen,M.,
+            Alvarado,L., Berlin,A., Borenstein,D., Chen,Z., Engels,R.,
+            Freedman,E., Gellesch,M., Goldberg,J., Griggs,A., Gujja,S.,
+            Heiman,D., Hepburn,T., Howarth,C., Jen,D., Larson,L., Lewis,B.,
+            Mehta,T., Park,D., Pearson,M., Roberts,A., Saif,S., Shea,T.,
+            Shenoy,N., Sisk,P., Stolte,C., Sykes,S., Walk,T., White,J.,
+            Yandava,C., Gilmore,M., Manson,J., Palmer,K., Carniol,K.,
+            Lander,E., Nusbaum,C., Galagan,J. and Birren,B.
+  CONSRTM   The Broad Institute Genome Sequencing Platform
+  TITLE     The Genome Sequence of Enterococcus faecalis strain D6
+  JOURNAL   Unpublished
+REFERENCE   2  (residues 1 to 327)
+  AUTHORS   Feldgarden,M., Young,S.K., Kodira,C.D., Zeng,Q., Koehrsen,M.,
+            Alvarado,L., Berlin,A., Borenstein,D., Chen,Z., Engels,R.,
+            Freedman,E., Gellesch,M., Goldberg,J., Griggs,A., Gujja,S.,
+            Heiman,D., Hepburn,T., Howarth,C., Jen,D., Larson,L., Lewis,B.,
+            Mehta,T., Park,D., Pearson,M., Roberts,A., Saif,S., Shea,T.,
+            Shenoy,N., Sisk,P., Stolte,C., Sykes,S., Walk,T., White,J.,
+            Yandava,C., Gilmore,M., Manson,J., Palmer,K., Carniol,K.,
+            Lander,E., Nusbaum,C., Galagan,J. and Birren,B.
+  CONSRTM   The Broad Institute Genome Sequencing Platform
+  TITLE     Direct Submission
+  JOURNAL   Submitted (23-FEB-2009) Broad Institute of MIT and Harvard, 7
+            Cambridge Center, Cambridge, MA 02142, USA
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..327
+                     /organism="Enterococcus faecalis D6"
+                     /strain="D6"
+                     /db_xref="taxon:565650"
+     Protein         1..327
+                     /product="CylI"
+     Region          30..>106
+                     /region_name="S2P-M50"
+                     /note="Site-2 protease (S2P) class of zinc
+                     metalloproteases (MEROPS family M50) cleaves transmembrane
+                     domains of substrate proteins, regulating intramembrane
+                     proteolysis (RIP) of diverse signal transduction
+                     mechanisms. Members of this family use proteolytic...;
+                     cl10020"
+                     /db_xref="CDD:271691"
+     Site            order(39..40,43)
+                     /site_type="active"
+                     /db_xref="CDD:100078"
+     CDS             1..327
+                     /locus_tag="EFLG_01818"
+                     /coded_by="GG688628.1:199423..200406"
+                     /transl_table=11
+ORIGIN      
+        1 mkfispmift lllviftlvf elnlvstayf slllsifvhe lghlvfglfn kvrpeslifg
+       61 fiklswekqf kvrlntqwgf fgglfrykpt tfnnkkilrl ltggpifslf ftltffvkie
+      121 ffqyfslfnf siflitavpf nfngfmndgy niyklvtkdy ifemyyivsn sllnkynqst
+      181 flnsnevcki ikknkelply vlntfllyvi yeylidknnr klkliypils kedkilnnks
+      241 ylqnfylanl ymieyilsvd nkqtfkkinl kildsisrsr ikylnfkcsk saddeisqsm
+      301 tefsniikny sdqtstmiia ekqwvqn
+//
+

@@ -1,0 +1,48 @@
+LOCUS       AF061787_1                58 aa            linear   BCT 03-MAY-1999
+DEFINITION  microcin J25 precursor (plasmid) [Escherichia coli].
+ACCESSION   AAD28494
+VERSION     AAD28494.1  GI:4731432
+DBSOURCE    accession AF061787.1
+KEYWORDS    .
+SOURCE      Escherichia coli
+  ORGANISM  Escherichia coli
+            Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacteriales;
+            Enterobacteriaceae; Escherichia.
+REFERENCE   1  (residues 1 to 58)
+  AUTHORS   Solbiati,J.O., Ciaccio,M., Farias,R.N. and Salomon,R.A.
+  TITLE     Genetic analysis of plasmid determinants for microcin J25
+            production and immunity
+  JOURNAL   J. Bacteriol. 178 (12), 3661-3663 (1996)
+   PUBMED   8655570
+REFERENCE   2  (residues 1 to 58)
+  AUTHORS   Solbiati,J.O., Ciaccio,M., Farias,R.N., Gonzalez-Pastor,J.E.,
+            Moreno,F. and Salomon,R.A.
+  TITLE     Sequence analysis of the four plasmid genes required to produce the
+            circular peptide antibiotic microcin J25
+  JOURNAL   J. Bacteriol. 181 (8), 2659-2662 (1999)
+   PUBMED   10198038
+REFERENCE   3  (residues 1 to 58)
+  AUTHORS   Solbiati,J.O., Ciaccio,M., Farias,R.N., Gonzalez-Pastor,J.E.,
+            Moreno,F. and Salomon,R.A.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (27-APR-1998) Departamento de Bioquimica de la Nutricion
+            (INSIBIO) and Instituto de Quimica Biologica 'Dr. Bernabe Bloj',
+            Universidad Nacional de Tucuman, Chacabuco 461, San Miguel de
+            Tucuman, Tucuman 4000, Republica Argentina
+COMMENT     Method: conceptual translation supplied by author.
+FEATURES             Location/Qualifiers
+     source          1..58
+                     /organism="Escherichia coli"
+                     /strain="AY25"
+                     /db_xref="taxon:562"
+                     /plasmid="pTUC100"
+     Protein         1..58
+                     /product="microcin J25 precursor"
+     CDS             1..58
+                     /gene="mcjA"
+                     /coded_by="complement(AF061787.1:62..238)"
+                     /transl_table=11
+ORIGIN      
+        1 mikhfhfnkl ssgkknnvps pakgviqikk sasqltkgga ghvpeyfvgi gtpisfyg
+//
+

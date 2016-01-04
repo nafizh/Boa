@@ -1,0 +1,101 @@
+LOCUS       ADZ63256                 447 aa            linear   BCT 10-FEB-2015
+DEFINITION  nisin biosynthesis two-component system, sensor histidine kinase
+            NisK [Lactococcus lactis subsp. lactis CV56].
+ACCESSION   ADZ63256
+VERSION     ADZ63256.1  GI:326406185
+DBLINK      BioProject: PRJNA60377
+            BioSample: SAMN02603398
+DBSOURCE    accession CP002365.1
+KEYWORDS    .
+SOURCE      Lactococcus lactis subsp. lactis CV56
+  ORGANISM  Lactococcus lactis subsp. lactis CV56
+            Bacteria; Firmicutes; Bacilli; Lactobacillales; Streptococcaceae;
+            Lactococcus.
+REFERENCE   1  (residues 1 to 447)
+  AUTHORS   Gao,Y., Lu,Y., Teng,K.L., Chen,M.L., Zheng,H.J., Zhu,Y.Q. and
+            Zhong,J.
+  TITLE     Complete Genome Sequence of Lactococcus lactis subsp. lactis CV56,
+            a Probiotic Strain Isolated from the Vaginas of Healthy Women
+  JOURNAL   J. Bacteriol. 193 (11), 2886-2887 (2011)
+   PUBMED   21460077
+REFERENCE   2  (residues 1 to 447)
+  AUTHORS   Gao,Y., Lu,Y., Teng,K. and Zhong,J.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (23-NOV-2010) Molecular Genetic of Lactis Acid Bacteria,
+            Institute of Microbiology, Chinese Academy of Sciences, A601 1-3
+            West Beichen Road, Institute of Microbiology, Beijing 100101, China
+COMMENT     Bacterial Strain CV56 available from Dr. Jin Zhong
+            (zhongj@im.ac.cn) at Institute of Microbiology, Chinese Academy of
+            Sciences.
+            Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..447
+                     /organism="Lactococcus lactis subsp. lactis CV56"
+                     /strain="CV56"
+                     /isolation_source="vagina of healthy women"
+                     /host="Homo sapiens"
+                     /sub_species="lactis"
+                     /db_xref="taxon:929102"
+     Protein         1..447
+                     /product="nisin biosynthesis two-component system, sensor
+                     histidine kinase NisK"
+                     /EC_number="2.7.13.3"
+     Region          121..447
+                     /region_name="BaeS"
+                     /note="Signal transduction histidine kinase [Signal
+                     transduction mechanisms]; COG0642"
+                     /db_xref="CDD:223715"
+     Region          233..289
+                     /region_name="HisKA"
+                     /note="Histidine Kinase A (dimerization/phosphoacceptor)
+                     domain; Histidine Kinase A dimers are formed through
+                     parallel association of 2 domains creating 4-helix
+                     bundles; usually these domains contain a conserved His
+                     residue and are activated via...; cd00082"
+                     /db_xref="CDD:119399"
+     Site            order(236,240,243,247,250,266,270,273,277,280,284)
+                     /site_type="other"
+                     /note="dimer interface [polypeptide binding]"
+                     /db_xref="CDD:119399"
+     Site            238
+                     /site_type="phosphorylation"
+                     /note="phosphorylation site [posttranslational
+                     modification]"
+                     /db_xref="CDD:119399"
+     Region          343..445
+                     /region_name="HATPase_c"
+                     /note="Histidine kinase-like ATPases; This family includes
+                     several ATP-binding proteins for example: histidine
+                     kinase, DNA gyrase B, topoisomerases, heat shock protein
+                     HSP90, phytochrome-like ATPases and DNA mismatch repair
+                     proteins; cd00075"
+                     /db_xref="CDD:238030"
+     Site            order(349,353,356,380,382,384,386..387,412..415,431,433,
+                     438..439,441)
+                     /site_type="other"
+                     /note="ATP binding site [chemical binding]"
+                     /db_xref="CDD:238030"
+     Site            353
+                     /site_type="other"
+                     /note="Mg2+ binding site [ion binding]"
+                     /db_xref="CDD:238030"
+     Site            order(384,386,412,414)
+                     /site_type="other"
+                     /note="G-X-G motif"
+                     /db_xref="CDD:238030"
+     CDS             1..447
+                     /gene="nisK"
+                     /locus_tag="CVCAS_0594"
+                     /coded_by="CP002365.1:614531..615874"
+                     /transl_table=11
+ORIGIN      
+        1 mgkkysmrrr iwqavieiii gtcllillll gltfflrqig qisgsetirl sldsdnltis
+       61 dierdmkhyp ydyiifdndt skilgghyvk sdvpsfvask qsshnitege itytyssnkh
+      121 fsvvlrqnsm peftnhtlrs isynqftylf fflgeiilii fsvyhliref sknfqavqki
+      181 alkmgeittf peqeeskiie fdqvlnnlys kskelaflie aerhekhdls fqvaalshdv
+      241 ktpltvlkgn iellemtevn eqqadfiesm knsltvfdky fntmisytkl lndendykat
+      301 isledflidl sveleelstt yqvdyqlvkk tdlttfygnt lalsralini fvnacqyake
+      361 gekivslsiy ddekylyfei wnnghpfseq akknagklff tedtgrsgkh ygiglsfaqg
+      421 valkhqgnli lsnpqkggae vilkikk
+//
+

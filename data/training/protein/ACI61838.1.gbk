@@ -1,0 +1,90 @@
+LOCUS       ACI61838                 245 aa            linear   BCT 31-JAN-2014
+DEFINITION  Putative salivaricin A ABC transporter [Streptococcus pyogenes
+            NZ131].
+ACCESSION   ACI61838
+VERSION     ACI61838.1  GI:209541262
+DBLINK      BioProject: PRJNA20707
+            BioSample: SAMN02604236
+DBSOURCE    accession CP000829.1
+KEYWORDS    .
+SOURCE      Streptococcus pyogenes NZ131
+  ORGANISM  Streptococcus pyogenes NZ131
+            Bacteria; Firmicutes; Bacilli; Lactobacillales; Streptococcaceae;
+            Streptococcus.
+REFERENCE   1  (residues 1 to 245)
+  AUTHORS   McShan,W.M., Ferretti,J.J., Karasawa,T., Suvorov,A.N., Lin,S.,
+            Qin,B., Jia,H., Kenton,S., Najar,F., Wu,H., Scott,J., Roe,B.A. and
+            Savic,D.J.
+  TITLE     Genome sequence of a nephritogenic and highly transformable M49
+            strain of Streptococcus pyogenes
+  JOURNAL   J. Bacteriol. 190 (23), 7773-7785 (2008)
+   PUBMED   18820018
+REFERENCE   2  (residues 1 to 245)
+  AUTHORS   McShan,W.M.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (13-SEP-2007) Pharmaceutical Sciences, University of
+            Oklahoma Health Sciences Center, P.O. Box 26901, Oklahoma City, OK
+            73190, USA
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..245
+                     /organism="Streptococcus pyogenes NZ131"
+                     /strain="NZ131; ATCC BAA-1633"
+                     /serotype="M49"
+                     /culture_collection="ATCC:BAA-1633"
+                     /db_xref="taxon:471876"
+                     /focus
+     Protein         1..245
+                     /product="Putative salivaricin A ABC transporter"
+     Region          4..225
+                     /region_name="SalX"
+                     /note="ABC-type antimicrobial peptide transport system,
+                     ATPase component [Defense mechanisms]; COG1136"
+                     /db_xref="CDD:224059"
+     Region          4..219
+                     /region_name="ABC_MJ0796_LolCDE_FtsE"
+                     /note="ATP-binding cassette domain of the transporters
+                     involved in export of lipoprotein and macrolide, and cell
+                     division protein; cd03255"
+                     /db_xref="CDD:213222"
+     Site            38..45
+                     /site_type="other"
+                     /note="Walker A/P-loop"
+                     /db_xref="CDD:213222"
+     Site            order(41..42,44..46,90,166..167,200)
+                     /site_type="other"
+                     /note="ATP binding site [chemical binding]"
+                     /db_xref="CDD:213222"
+     Site            87..90
+                     /site_type="other"
+                     /note="Q-loop/lid"
+                     /db_xref="CDD:213222"
+     Site            142..151
+                     /site_type="other"
+                     /note="ABC transporter signature motif"
+                     /db_xref="CDD:213222"
+     Site            162..167
+                     /site_type="other"
+                     /note="Walker B"
+                     /db_xref="CDD:213222"
+     Site            170..173
+                     /site_type="other"
+                     /note="D-loop"
+                     /db_xref="CDD:213222"
+     Site            196..202
+                     /site_type="other"
+                     /note="H-loop/switch region"
+                     /db_xref="CDD:213222"
+     CDS             1..245
+                     /gene="salX"
+                     /locus_tag="Spy49_1579c"
+                     /coded_by="complement(CP000829.1:1559973..1560710)"
+                     /transl_table=11
+ORIGIN      
+        1 mkqlvlkdvc kkypnqlnya ldhinlivek gefvavmgrs gsgkttllnv tsiidkidsg
+       61 siycadkeis afsdneatsf rkndigfvfq dymlldslti renisvalsl knvdsskidd
+      121 linnyakrfn lyeqlkkypy qlsggqrqrv siiraiikep eiifadeptg aldlkssegt
+      181 mrilseinkt ekvtilmvth dvlsasyadr vvllkdgklh meidkedcge tfydvisqal
+      241 sdrge
+//
+

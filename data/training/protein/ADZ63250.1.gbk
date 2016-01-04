@@ -1,0 +1,77 @@
+LOCUS       ADZ63250                 993 aa            linear   BCT 10-FEB-2015
+DEFINITION  nisin biosynthesis protein NisB [Lactococcus lactis subsp. lactis
+            CV56].
+ACCESSION   ADZ63250
+VERSION     ADZ63250.1  GI:326406179
+DBLINK      BioProject: PRJNA60377
+            BioSample: SAMN02603398
+DBSOURCE    accession CP002365.1
+KEYWORDS    .
+SOURCE      Lactococcus lactis subsp. lactis CV56
+  ORGANISM  Lactococcus lactis subsp. lactis CV56
+            Bacteria; Firmicutes; Bacilli; Lactobacillales; Streptococcaceae;
+            Lactococcus.
+REFERENCE   1  (residues 1 to 993)
+  AUTHORS   Gao,Y., Lu,Y., Teng,K.L., Chen,M.L., Zheng,H.J., Zhu,Y.Q. and
+            Zhong,J.
+  TITLE     Complete Genome Sequence of Lactococcus lactis subsp. lactis CV56,
+            a Probiotic Strain Isolated from the Vaginas of Healthy Women
+  JOURNAL   J. Bacteriol. 193 (11), 2886-2887 (2011)
+   PUBMED   21460077
+REFERENCE   2  (residues 1 to 993)
+  AUTHORS   Gao,Y., Lu,Y., Teng,K. and Zhong,J.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (23-NOV-2010) Molecular Genetic of Lactis Acid Bacteria,
+            Institute of Microbiology, Chinese Academy of Sciences, A601 1-3
+            West Beichen Road, Institute of Microbiology, Beijing 100101, China
+COMMENT     Bacterial Strain CV56 available from Dr. Jin Zhong
+            (zhongj@im.ac.cn) at Institute of Microbiology, Chinese Academy of
+            Sciences.
+            Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..993
+                     /organism="Lactococcus lactis subsp. lactis CV56"
+                     /strain="CV56"
+                     /isolation_source="vagina of healthy women"
+                     /host="Homo sapiens"
+                     /sub_species="lactis"
+                     /db_xref="taxon:929102"
+     Protein         1..993
+                     /product="nisin biosynthesis protein NisB"
+     Region          42..133
+                     /region_name="Lant_dehyd_N"
+                     /note="Lantibiotic dehydratase, N terminus; pfam04737"
+                     /db_xref="CDD:147079"
+     Region          189..673
+                     /region_name="Lant_dehyd_C"
+                     /note="Lantibiotic dehydratase, C terminus; pfam04738"
+                     /db_xref="CDD:252771"
+     Region          737..980
+                     /region_name="SpaB_C"
+                     /note="SpaB C-terminal domain; pfam14028"
+                     /db_xref="CDD:258263"
+     CDS             1..993
+                     /gene="nisB"
+                     /locus_tag="CVCAS_0588"
+                     /coded_by="CP002365.1:604968..607949"
+                     /transl_table=11
+ORIGIN      
+        1 mikssfkaqp flvrntilsp ndkrsfteyt qvietvsknk vfleqlllan pklydvmqky
+       61 nagllkkkrv kklfesiyky ykrsylrstp fglfsetsig vfskssqykl mgkttkgirl
+      121 dtqwlirlvh kmevdfskkl sftrnnanyk fgdrvfqvyt insseleevn ikytnvyqii
+      181 sefcendyqk yedicetvtl cygdeyrels eqylgslivn hylisnlqkd llsdfswntf
+      241 ltkveaided kkyiiplkkv qkfiqeysei eigegieklk eiyqemsqil endnyiqidl
+      301 isdseinfdv kqkqqlehla eflgnttksv rrtylddykd kfiekygvdq evqitelfds
+      361 tfgigapyny nhprndfyes epstlyysee erekylsmyv eavknhnvin lddleshyqk
+      421 mdlekkselq glelflnlak eyekdifilg divgnnnlgg asgrfsalsp eltsyhrtiv
+      481 dsverenenk eitsceivfl penirhanvm htsimrrkvl pfftstshne vlltniyigi
+      541 dekekfyard istqevlkfy itsmynktlf snelrflyei slddkfgnlp weliyrdfdy
+      601 iprlvfdeiv ispakwkiwg rdvnskmtir eliqskeipk efyivngdnk vylsqenpld
+      661 meilesaikk sskrkdfiel qeyfedenii nkgekgrvad vvvpfirtra lgnegrafir
+      721 ekrvsverre klpfnewlyl klyisinrqn efllsylpdi qkivanlggn lfflrytdpk
+      781 phirlrikcs dlflaygsil eilkrsrknr imstfdisiy dqeveryggf dtlelseaif
+      841 cadskiipnl ltlikdtnnd wkvddvsilv nylylkcffq ndnkkilnfl nlvstkkvke
+      901 nvnekiehyl kllkvnnlgd qifydknfke lkhaiknlfl kmiaqdfelq kvysiidsii
+      961 hvhnnrligi erdkekliyy tlqrlfvsee ymk
+//
+

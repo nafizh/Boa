@@ -1,0 +1,74 @@
+LOCUS       EEU81208                  66 aa            linear   BCT 12-MAR-2015
+DEFINITION  conserved hypothetical protein [Enterococcus faecalis D6].
+ACCESSION   EEU81208
+VERSION     EEU81208.1  GI:256993906
+DBLINK      BioProject: PRJNA32947
+            BioSample: SAMN02595264
+DBSOURCE    accession GG688628.1
+KEYWORDS    .
+SOURCE      Enterococcus faecalis D6
+  ORGANISM  Enterococcus faecalis D6
+            Bacteria; Firmicutes; Bacilli; Lactobacillales; Enterococcaceae;
+            Enterococcus.
+REFERENCE   1  (residues 1 to 66)
+  AUTHORS   Feldgarden,M., Young,S.K., Kodira,C.D., Zeng,Q., Koehrsen,M.,
+            Alvarado,L., Berlin,A., Borenstein,D., Chen,Z., Engels,R.,
+            Freedman,E., Gellesch,M., Goldberg,J., Griggs,A., Gujja,S.,
+            Heiman,D., Hepburn,T., Howarth,C., Jen,D., Larson,L., Lewis,B.,
+            Mehta,T., Park,D., Pearson,M., Roberts,A., Saif,S., Shea,T.,
+            Shenoy,N., Sisk,P., Stolte,C., Sykes,S., Walk,T., White,J.,
+            Yandava,C., Gilmore,M., Manson,J., Palmer,K., Carniol,K.,
+            Lander,E., Nusbaum,C., Galagan,J. and Birren,B.
+  CONSRTM   The Broad Institute Genome Sequencing Platform
+  TITLE     The Genome Sequence of Enterococcus faecalis strain D6
+  JOURNAL   Unpublished
+REFERENCE   2  (residues 1 to 66)
+  AUTHORS   Feldgarden,M., Young,S.K., Kodira,C.D., Zeng,Q., Koehrsen,M.,
+            Alvarado,L., Berlin,A., Borenstein,D., Chen,Z., Engels,R.,
+            Freedman,E., Gellesch,M., Goldberg,J., Griggs,A., Gujja,S.,
+            Heiman,D., Hepburn,T., Howarth,C., Jen,D., Larson,L., Lewis,B.,
+            Mehta,T., Park,D., Pearson,M., Roberts,A., Saif,S., Shea,T.,
+            Shenoy,N., Sisk,P., Stolte,C., Sykes,S., Walk,T., White,J.,
+            Yandava,C., Gilmore,M., Manson,J., Palmer,K., Carniol,K.,
+            Lander,E., Nusbaum,C., Galagan,J. and Birren,B.
+  CONSRTM   The Broad Institute Genome Sequencing Platform
+  TITLE     Direct Submission
+  JOURNAL   Submitted (23-FEB-2009) Broad Institute of MIT and Harvard, 7
+            Cambridge Center, Cambridge, MA 02142, USA
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..66
+                     /organism="Enterococcus faecalis D6"
+                     /strain="D6"
+                     /db_xref="taxon:565650"
+     Protein         1..66
+                     /product="conserved hypothetical protein"
+     Region          4..60
+                     /region_name="HTH_XRE"
+                     /note="Helix-turn-helix XRE-family like proteins.
+                     Prokaryotic DNA binding proteins belonging to the
+                     xenobiotic response element family of transcriptional
+                     regulators; cd00093"
+                     /db_xref="CDD:238045"
+     Site            order(7,11,36)
+                     /site_type="other"
+                     /note="non-specific DNA binding site [nucleotide binding]"
+                     /db_xref="CDD:238045"
+     Site            order(10,35)
+                     /site_type="other"
+                     /note="salt bridge"
+                     /db_xref="CDD:238045"
+     Site            order(17..18,29,32,36..37)
+                     /site_type="other"
+                     /note="sequence-specific DNA binding site [nucleotide
+                     binding]"
+                     /db_xref="CDD:238045"
+     CDS             1..66
+                     /locus_tag="EFLG_01811"
+                     /coded_by="complement(GG688628.1:191954..192154)"
+                     /transl_table=11
+ORIGIN      
+        1 miinnlklir ekkkisqsel aallevsrqt ingieknkyn pslqlalkia yyldtpledi
+       61 fqwqpe
+//
+

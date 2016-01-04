@@ -1,0 +1,96 @@
+LOCUS       ADZ63251                 600 aa            linear   BCT 10-FEB-2015
+DEFINITION  nisin transport ATP-binding protein nisT [Lactococcus lactis subsp.
+            lactis CV56].
+ACCESSION   ADZ63251
+VERSION     ADZ63251.1  GI:326406180
+DBLINK      BioProject: PRJNA60377
+            BioSample: SAMN02603398
+DBSOURCE    accession CP002365.1
+KEYWORDS    .
+SOURCE      Lactococcus lactis subsp. lactis CV56
+  ORGANISM  Lactococcus lactis subsp. lactis CV56
+            Bacteria; Firmicutes; Bacilli; Lactobacillales; Streptococcaceae;
+            Lactococcus.
+REFERENCE   1  (residues 1 to 600)
+  AUTHORS   Gao,Y., Lu,Y., Teng,K.L., Chen,M.L., Zheng,H.J., Zhu,Y.Q. and
+            Zhong,J.
+  TITLE     Complete Genome Sequence of Lactococcus lactis subsp. lactis CV56,
+            a Probiotic Strain Isolated from the Vaginas of Healthy Women
+  JOURNAL   J. Bacteriol. 193 (11), 2886-2887 (2011)
+   PUBMED   21460077
+REFERENCE   2  (residues 1 to 600)
+  AUTHORS   Gao,Y., Lu,Y., Teng,K. and Zhong,J.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (23-NOV-2010) Molecular Genetic of Lactis Acid Bacteria,
+            Institute of Microbiology, Chinese Academy of Sciences, A601 1-3
+            West Beichen Road, Institute of Microbiology, Beijing 100101, China
+COMMENT     Bacterial Strain CV56 available from Dr. Jin Zhong
+            (zhongj@im.ac.cn) at Institute of Microbiology, Chinese Academy of
+            Sciences.
+            Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..600
+                     /organism="Lactococcus lactis subsp. lactis CV56"
+                     /strain="CV56"
+                     /isolation_source="vagina of healthy women"
+                     /host="Homo sapiens"
+                     /sub_species="lactis"
+                     /db_xref="taxon:929102"
+     Protein         1..600
+                     /product="nisin transport ATP-binding protein nisT"
+     Region          20..596
+                     /region_name="MdlB"
+                     /note="ABC-type multidrug transport system, ATPase and
+                     permease components [Defense mechanisms]; COG1132"
+                     /db_xref="CDD:224055"
+     Region          352..569
+                     /region_name="ABCC_MRP_Like"
+                     /note="ATP-binding cassette domain of multidrug resistance
+                     protein-like transporters; cd03228"
+                     /db_xref="CDD:213195"
+     Site            386..393
+                     /site_type="other"
+                     /note="Walker A/P-loop"
+                     /db_xref="CDD:213195"
+     Site            order(389..390,392..394,434,519..520,551)
+                     /site_type="other"
+                     /note="ATP binding site [chemical binding]"
+                     /db_xref="CDD:213195"
+     Site            431..434
+                     /site_type="other"
+                     /note="Q-loop/lid"
+                     /db_xref="CDD:213195"
+     Site            495..504
+                     /site_type="other"
+                     /note="ABC transporter signature motif"
+                     /db_xref="CDD:213195"
+     Site            515..520
+                     /site_type="other"
+                     /note="Walker B"
+                     /db_xref="CDD:213195"
+     Site            523..526
+                     /site_type="other"
+                     /note="D-loop"
+                     /db_xref="CDD:213195"
+     Site            547..553
+                     /site_type="other"
+                     /note="H-loop/switch region"
+                     /db_xref="CDD:213195"
+     CDS             1..600
+                     /gene="nisT"
+                     /locus_tag="CVCAS_0589"
+                     /coded_by="CP002365.1:607960..609762"
+                     /transl_table=11
+ORIGIN      
+        1 mdevkeftsk qffntlltlp stlklifqle kryaiylivl naitafvpla slfiyqdlin
+       61 svlgsgrhli niiiiyfivq vittvlgqle syvsgkfdmr lsysinmrlm rttsslelsd
+      121 yeqadmynii ekvtqdstyk pfqlfnaiiv vlssfislls slffigtwni gvailllivp
+      181 vlslvlflrv gqlefliqwq rasseretwy ivyllthdfs fkeiklnnis nyfihkfgkl
+      241 kkgfinqdla iarkktyfni fldfilnlin iltifamils vragkllign lvsliqaisk
+      301 intysqtmiq niyiiyntsl fmeqlfeflk resvvhkkie dteicnqhig tvkvinlsyv
+      361 ypnsnafalk ninlsfekge ltaivgkngs gkstlvkiis glyqptmgii qydkmrsslm
+      421 peefyqknis vlfqdfvkye ltirenigls dlssqwedek iikvldnlgl dflktnnqyv
+      481 ldtqlgnwfq eghqlsggqw qkialartff kkasiyilde psaaldpvae keifdyfval
+      541 sennisifis hslnaarkan kivvmkdgqv edvgshdvll rrcqyyqely yseqyednde
+//
+

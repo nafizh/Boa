@@ -1,0 +1,75 @@
+LOCUS       EEU81214                 412 aa            linear   BCT 12-MAR-2015
+DEFINITION  clyA [Enterococcus faecalis D6].
+ACCESSION   EEU81214
+VERSION     EEU81214.1  GI:256993912
+DBLINK      BioProject: PRJNA32947
+            BioSample: SAMN02595264
+DBSOURCE    accession GG688628.1
+KEYWORDS    .
+SOURCE      Enterococcus faecalis D6
+  ORGANISM  Enterococcus faecalis D6
+            Bacteria; Firmicutes; Bacilli; Lactobacillales; Enterococcaceae;
+            Enterococcus.
+REFERENCE   1  (residues 1 to 412)
+  AUTHORS   Feldgarden,M., Young,S.K., Kodira,C.D., Zeng,Q., Koehrsen,M.,
+            Alvarado,L., Berlin,A., Borenstein,D., Chen,Z., Engels,R.,
+            Freedman,E., Gellesch,M., Goldberg,J., Griggs,A., Gujja,S.,
+            Heiman,D., Hepburn,T., Howarth,C., Jen,D., Larson,L., Lewis,B.,
+            Mehta,T., Park,D., Pearson,M., Roberts,A., Saif,S., Shea,T.,
+            Shenoy,N., Sisk,P., Stolte,C., Sykes,S., Walk,T., White,J.,
+            Yandava,C., Gilmore,M., Manson,J., Palmer,K., Carniol,K.,
+            Lander,E., Nusbaum,C., Galagan,J. and Birren,B.
+  CONSRTM   The Broad Institute Genome Sequencing Platform
+  TITLE     The Genome Sequence of Enterococcus faecalis strain D6
+  JOURNAL   Unpublished
+REFERENCE   2  (residues 1 to 412)
+  AUTHORS   Feldgarden,M., Young,S.K., Kodira,C.D., Zeng,Q., Koehrsen,M.,
+            Alvarado,L., Berlin,A., Borenstein,D., Chen,Z., Engels,R.,
+            Freedman,E., Gellesch,M., Goldberg,J., Griggs,A., Gujja,S.,
+            Heiman,D., Hepburn,T., Howarth,C., Jen,D., Larson,L., Lewis,B.,
+            Mehta,T., Park,D., Pearson,M., Roberts,A., Saif,S., Shea,T.,
+            Shenoy,N., Sisk,P., Stolte,C., Sykes,S., Walk,T., White,J.,
+            Yandava,C., Gilmore,M., Manson,J., Palmer,K., Carniol,K.,
+            Lander,E., Nusbaum,C., Galagan,J. and Birren,B.
+  CONSRTM   The Broad Institute Genome Sequencing Platform
+  TITLE     Direct Submission
+  JOURNAL   Submitted (23-FEB-2009) Broad Institute of MIT and Harvard, 7
+            Cambridge Center, Cambridge, MA 02142, USA
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..412
+                     /organism="Enterococcus faecalis D6"
+                     /strain="D6"
+                     /db_xref="taxon:565650"
+     Protein         1..412
+                     /product="clyA"
+     Region          136..393
+                     /region_name="Peptidases_S8_S53"
+                     /note="Peptidase domain in the S8 and S53 families;
+                     cl10459"
+                     /db_xref="CDD:271701"
+     Region          137..378
+                     /region_name="Peptidase_S8"
+                     /note="Subtilase family; pfam00082"
+                     /db_xref="CDD:249571"
+     Site            order(173,225,359)
+                     /site_type="active"
+                     /db_xref="CDD:173787"
+     Site            order(173,359)
+                     /site_type="active"
+                     /note="catalytic residues [active]"
+                     /db_xref="CDD:173787"
+     CDS             1..412
+                     /locus_tag="EFLG_01817"
+                     /coded_by="GG688628.1:198184..199422"
+                     /transl_table=11
+ORIGIN      
+        1 mkkrgltyil isyifltlgt tgyasdlsnn isffidnsqt taieeiesel ssekvdyiqe
+       61 iglvsfknld dsdrkfigky fnvsegkklp dfkpeevnss ilninilnkd fksfnwpykk
+      121 ilshidpvke qlgkditial idsgidrlhp nlqdnnlrlk nyvndielde yghgtqvagv
+      181 idtiaprvnl nsykvmdgtd gnsinmlkai vdatndqvdi invslgsykn meidderftv
+      241 eafrkavnya rknnilivas agnesrdist gnekhipggl esvitvgatk ksgdiadysn
+      301 ygsnvsiygp aggygdnyki tgqidaremm mtyyptslvs plgkaadfpd gytlsfgtsl
+      361 atpevsaala aimsknvdns kdsnevlntl fenadsfidk nsmlkykevr ik
+//
+

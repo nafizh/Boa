@@ -1,0 +1,68 @@
+LOCUS       AF061787_3               442 aa            linear   BCT 03-MAY-1999
+DEFINITION  McjC (plasmid) [Escherichia coli].
+ACCESSION   AAD28496
+VERSION     AAD28496.1  GI:4731434
+DBSOURCE    accession AF061787.1
+KEYWORDS    .
+SOURCE      Escherichia coli
+  ORGANISM  Escherichia coli
+            Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacteriales;
+            Enterobacteriaceae; Escherichia.
+REFERENCE   1  (residues 1 to 442)
+  AUTHORS   Solbiati,J.O., Ciaccio,M., Farias,R.N. and Salomon,R.A.
+  TITLE     Genetic analysis of plasmid determinants for microcin J25
+            production and immunity
+  JOURNAL   J. Bacteriol. 178 (12), 3661-3663 (1996)
+   PUBMED   8655570
+REFERENCE   2  (residues 1 to 442)
+  AUTHORS   Solbiati,J.O., Ciaccio,M., Farias,R.N., Gonzalez-Pastor,J.E.,
+            Moreno,F. and Salomon,R.A.
+  TITLE     Sequence analysis of the four plasmid genes required to produce the
+            circular peptide antibiotic microcin J25
+  JOURNAL   J. Bacteriol. 181 (8), 2659-2662 (1999)
+   PUBMED   10198038
+REFERENCE   3  (residues 1 to 442)
+  AUTHORS   Solbiati,J.O., Ciaccio,M., Farias,R.N., Gonzalez-Pastor,J.E.,
+            Moreno,F. and Salomon,R.A.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (27-APR-1998) Departamento de Bioquimica de la Nutricion
+            (INSIBIO) and Instituto de Quimica Biologica 'Dr. Bernabe Bloj',
+            Universidad Nacional de Tucuman, Chacabuco 461, San Miguel de
+            Tucuman, Tucuman 4000, Republica Argentina
+COMMENT     Method: conceptual translation supplied by author.
+FEATURES             Location/Qualifiers
+     source          1..442
+                     /organism="Escherichia coli"
+                     /strain="AY25"
+                     /db_xref="taxon:562"
+                     /plasmid="pTUC100"
+     Protein         1..442
+                     /product="McjC"
+                     /function="maturation of microcin J25"
+     Region          179..335
+                     /region_name="AANH_like"
+                     /note="Adenine nucleotide alpha hydrolases superfamily
+                     including N type ATP PPases, ATP sulphurylases Universal
+                     Stress Response protein and electron transfer flavoprotein
+                     (ETF). The domain forms a apha/beta/apha fold which binds
+                     to Adenosine nucleotide; cl00292"
+                     /db_xref="CDD:275515"
+     Site            order(197..198,201..204,222,224)
+                     /site_type="other"
+                     /note="Ligand Binding Site [chemical binding]"
+                     /db_xref="CDD:238942"
+     CDS             1..442
+                     /gene="mcjC"
+                     /coded_by="AF061787.1:1207..2535"
+                     /transl_table=11
+ORIGIN      
+        1 meifnvklnd tsiriifckt lsafrtenti vmlkgkavsn gkpvsteeia rvveekgvse
+       61 vienldgvfc iliyhfndll igksiqsgpa lfyckknmdi fvsdkisdik flnpdmtfsl
+      121 nitmaehyls gnriatqesl itgiykvnng efikfnnqlk pvllrdefsi tkknnstids
+      181 iidniemmrd nrkiallfsg gldsalifht lkesgnkfca yhffsdesdd sekyfakeyc
+      241 skygvdfisv nkninfnekl yfnlnpnspd eiplifeqtd eegegqppid ddllylcghg
+      301 gdhifgqnps elfgidayrs hglmfmhkki vefsnlkgkr ykdiifsnis afintsngcs
+      361 pakqehvsdm klasaqffat dytgkinklt pflhkniiqh yaglpvfslf nqhfdrypvr
+      421 yeafqrfgsd ifwkktkrss ss
+//
+

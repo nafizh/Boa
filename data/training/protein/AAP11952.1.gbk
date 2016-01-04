@@ -1,0 +1,63 @@
+LOCUS       AAP11952                 323 aa            linear   BCT 30-JAN-2014
+DEFINITION  Lantibiotic biosynthesis protein [Bacillus cereus ATCC 14579].
+ACCESSION   AAP11952
+VERSION     AAP11952.1  GI:29898680
+DBLINK      BioProject: PRJNA384
+            BioSample: SAMN02603340
+DBSOURCE    accession AE016877.1
+KEYWORDS    .
+SOURCE      Bacillus cereus ATCC 14579
+  ORGANISM  Bacillus cereus ATCC 14579
+            Bacteria; Firmicutes; Bacilli; Bacillales; Bacillaceae; Bacillus;
+            Bacillus cereus group.
+REFERENCE   1  (residues 1 to 323)
+  AUTHORS   Ivanova,N., Sorokin,A., Anderson,I., Galleron,N., Candelon,B.,
+            Kapatral,V., Bhattacharyya,A., Reznik,G., Mikhailova,N.,
+            Lapidus,A., Chu,L., Mazur,M., Goltsman,E., Larsen,N., D'Souza,M.,
+            Walunas,T., Grechkin,Y., Pusch,G., Haselkorn,R., Fonstein,M.,
+            Ehrlich,S.D., Overbeek,R. and Kyrpides,N.
+  TITLE     Genome sequence of Bacillus cereus and comparative analysis with
+            Bacillus anthracis
+  JOURNAL   Nature 423 (6935), 87-91 (2003)
+   PUBMED   12721630
+REFERENCE   2  (residues 1 to 323)
+  AUTHORS   Candelon,B., Gailloux,K., Ehrlich,D.S. and Sorokin,A.
+  TITLE     The number of ribosomal RNA operons in Bacillus cereus
+  JOURNAL   Unpublished
+REFERENCE   3  (residues 1 to 323)
+  AUTHORS   Ivanova,N., Sorokin,A., Anderson,I., Galleron,N., Candelon,B.,
+            Kapatral,V., Bhattacharyya,A., Reznik,G., Mikhailova,N.,
+            Lapidus,A., Chu,L., Mazur,M., Goltsman,E., Larsen,N., D'Souza,M.,
+            Walunas,T., Grechkin,Y., Pusch,G., Haselkorn,R., Fonstein,M.,
+            Ehrlich,D.S.D., Overbeek,R. and Kyrpides,N.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (12-MAR-2003) INRA, Genetique Microbienne, Domaine de
+            Vilvert, Jouy en Josas 78352, France
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..323
+                     /organism="Bacillus cereus ATCC 14579"
+                     /strain="ATCC 14579"
+                     /db_xref="ATCC:14579"
+                     /db_xref="taxon:226900"
+                     /focus
+     Protein         1..323
+                     /product="Lantibiotic biosynthesis protein"
+     Region          8..309
+                     /region_name="SpaB_C"
+                     /note="SpaB C-terminal domain; pfam14028"
+                     /db_xref="CDD:258263"
+     CDS             1..323
+                     /locus_tag="BC_5083"
+                     /old_locus_tag="BC5083"
+                     /coded_by="complement(AE016877.1:4989031..4990002)"
+                     /transl_table=11
+ORIGIN      
+        1 mnennfiwka yhifyhqnqd flitncikpi ldelikkkli skfffirywe ggphirvrly
+       61 ctlnksqevd ykfndfvskf lktypssstl drnmiknqla klasleegte stcvrennhi
+      121 ihleynpeyk ryggengiei aeehfyhssi mclkliqein kktnrlrisi eiilsylkam
+      181 nmnlqesikf legyyliwkr yvysntnnve effankyikq kkvidkivvn yfnsnnnkgm
+      241 lgekwsnhln ltvqnlendw drgeliidkd vlayinipqk iafivtsyvh mtnnrlgimp
+      301 qeeaylsyml lcslkslyks rkg
+//
+

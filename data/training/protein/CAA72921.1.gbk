@@ -1,0 +1,86 @@
+LOCUS       CAA72921                 219 aa            linear   BCT 18-APR-2005
+DEFINITION  AS-48D protein [Enterococcus faecalis].
+ACCESSION   CAA72921
+VERSION     CAA72921.1  GI:2664261
+DBSOURCE    embl accession Y12234.1
+KEYWORDS    .
+SOURCE      Enterococcus faecalis
+  ORGANISM  Enterococcus faecalis
+            Bacteria; Firmicutes; Bacilli; Lactobacillales; Enterococcaceae;
+            Enterococcus.
+REFERENCE   1
+  AUTHORS   Martinez-Bueno,M., Valdivia,E., Galvez,A., Coyette,J. and
+            Maqueda,M.
+  TITLE     Analysis of the gene cluster involved in production and immunity of
+            the peptide antibiotic AS-48 in Enterococcus faecalis
+  JOURNAL   Mol. Microbiol. 27 (2), 347-358 (1998)
+   PUBMED   9484890
+REFERENCE   2  (residues 1 to 219)
+  AUTHORS   Martinez-Bueno,M.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (02-APR-1997) M. Martinez-Bueno, University of Granada,
+            Microbiology, Facultad de Ciencias, Fuentenueva S/N, 18071-Granada,
+            SPAIN
+FEATURES             Location/Qualifiers
+     source          1..219
+                     /organism="Enterococcus faecalis"
+                     /strain="S-48"
+                     /sub_species="liquefaciens"
+                     /db_xref="taxon:1351"
+     Protein         1..219
+                     /product="AS-48D protein"
+                     /function="putative ABC transporter"
+     Region          1..207
+                     /region_name="CbiO"
+                     /note="ABC-type cobalt transport system, ATPase component
+                     [Inorganic ion transport and metabolism]; COG1122"
+                     /db_xref="CDD:224047"
+     Region          4..207
+                     /region_name="ABC_ATPase"
+                     /note="ATP-binding cassette transporter nucleotide-binding
+                     domain; cl21455"
+                     /db_xref="CDD:276299"
+     Site            38..45
+                     /site_type="other"
+                     /note="Walker A/P-loop"
+                     /db_xref="CDD:213179"
+     Site            order(41..42,44..46,83,160..161,190)
+                     /site_type="other"
+                     /note="ATP binding site [chemical binding]"
+                     /db_xref="CDD:213179"
+     Site            80..83
+                     /site_type="other"
+                     /note="Q-loop/lid"
+                     /db_xref="CDD:213179"
+     Site            136..145
+                     /site_type="other"
+                     /note="ABC transporter signature motif"
+                     /db_xref="CDD:213179"
+     Site            156..161
+                     /site_type="other"
+                     /note="Walker B"
+                     /db_xref="CDD:213179"
+     Site            164..167
+                     /site_type="other"
+                     /note="D-loop"
+                     /db_xref="CDD:213179"
+     Site            186..192
+                     /site_type="other"
+                     /note="H-loop/switch region"
+                     /db_xref="CDD:213179"
+     CDS             1..219
+                     /gene="as-48D"
+                     /coded_by="Y12234.1:3535..4194"
+                     /transl_table=11
+                     /db_xref="GOA:O53027"
+                     /db_xref="HSSP:1US8"
+                     /db_xref="InterPro:IPR003439"
+                     /db_xref="InterPro:IPR003593"
+                     /db_xref="UniProtKB/TrEMBL:O53027"
+ORIGIN      
+        1 mkkitinnls fyyeskdtmv fdrlslefss ekiyalvgsn gvgkttllni lsgiyqptgg
+       61 tieydgtlyt ekvtkekvaf ipyktklypy ldvfdhikli aelwgiktdy leykrkvley
+      121 cnrlnldyyn krvesystgm eyklyislml ardvslvlld epftmldkks rylamdlike
+      181 kkiitifssh qkdiveylsn diinldklkg vnlknyekn
+//
+

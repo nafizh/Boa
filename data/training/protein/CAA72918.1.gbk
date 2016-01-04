@@ -1,0 +1,50 @@
+LOCUS       CAA72918                 563 aa            linear   BCT 18-APR-2005
+DEFINITION  AS-48B protein [Enterococcus faecalis].
+ACCESSION   CAA72918
+VERSION     CAA72918.1  GI:2664258
+DBSOURCE    embl accession Y12234.1
+KEYWORDS    .
+SOURCE      Enterococcus faecalis
+  ORGANISM  Enterococcus faecalis
+            Bacteria; Firmicutes; Bacilli; Lactobacillales; Enterococcaceae;
+            Enterococcus.
+REFERENCE   1
+  AUTHORS   Martinez-Bueno,M., Valdivia,E., Galvez,A., Coyette,J. and
+            Maqueda,M.
+  TITLE     Analysis of the gene cluster involved in production and immunity of
+            the peptide antibiotic AS-48 in Enterococcus faecalis
+  JOURNAL   Mol. Microbiol. 27 (2), 347-358 (1998)
+   PUBMED   9484890
+REFERENCE   2  (residues 1 to 563)
+  AUTHORS   Martinez-Bueno,M.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (02-APR-1997) M. Martinez-Bueno, University of Granada,
+            Microbiology, Facultad de Ciencias, Fuentenueva S/N, 18071-Granada,
+            SPAIN
+FEATURES             Location/Qualifiers
+     source          1..563
+                     /organism="Enterococcus faecalis"
+                     /strain="S-48"
+                     /sub_species="liquefaciens"
+                     /db_xref="taxon:1351"
+     Protein         1..563
+                     /product="AS-48B protein"
+                     /function="AS-48 maturation and biosynthesis"
+     CDS             1..563
+                     /gene="as-48B"
+                     /coded_by="Y12234.1:461..2152"
+                     /transl_table=11
+                     /db_xref="UniProtKB/TrEMBL:O53024"
+ORIGIN      
+        1 mnlfgilmkl ranqesslvk rvfsyfnlkl slkiylfini ffefslafvv slglrltlik
+       61 sdinvnlffi iffilgivqg asncyrthvf pfeelrklat issrkisfim ivtdlfyift
+      121 fsssilygll sliyissnaf ifqkfslsvf flfiyicsfy csnrifgqyi ynkivkaigl
+      181 trlifysiga alftylgffi vsfvfsnivy fikkyfvnie svnnkviwes fskdigmfyv
+      241 nsaskfyesh vysftyidvf lvsamllilt illlamepkl yplktkmlpk tkidlcnsyv
+      301 yflnkalkkn iffkcsllkl antrwiiann ffqniiltye sffyigvmls iillnsqnrm
+      361 lqiqllflln ilvignqtfe ireemypyls fglernqftl lrsspnglnk vfnsklmtyr
+      421 lfliipllil iiinivvsly imipvifaif lfitfsmsvy vfpmiqmymi platkldytn
+      481 dteigsakde kivlekfqtv pryffnivpl vltfifpivg erysliiffg elvyfslati
+      541 ifvffskkii rkgifvvhai ryh
+//
+

@@ -1,0 +1,89 @@
+LOCUS       AAP11950                 522 aa            linear   BCT 30-JAN-2014
+DEFINITION  NADH oxidase (NOXASE) [Bacillus cereus ATCC 14579].
+ACCESSION   AAP11950
+VERSION     AAP11950.1  GI:29898678
+DBLINK      BioProject: PRJNA384
+            BioSample: SAMN02603340
+DBSOURCE    accession AE016877.1
+KEYWORDS    .
+SOURCE      Bacillus cereus ATCC 14579
+  ORGANISM  Bacillus cereus ATCC 14579
+            Bacteria; Firmicutes; Bacilli; Bacillales; Bacillaceae; Bacillus;
+            Bacillus cereus group.
+REFERENCE   1  (residues 1 to 522)
+  AUTHORS   Ivanova,N., Sorokin,A., Anderson,I., Galleron,N., Candelon,B.,
+            Kapatral,V., Bhattacharyya,A., Reznik,G., Mikhailova,N.,
+            Lapidus,A., Chu,L., Mazur,M., Goltsman,E., Larsen,N., D'Souza,M.,
+            Walunas,T., Grechkin,Y., Pusch,G., Haselkorn,R., Fonstein,M.,
+            Ehrlich,S.D., Overbeek,R. and Kyrpides,N.
+  TITLE     Genome sequence of Bacillus cereus and comparative analysis with
+            Bacillus anthracis
+  JOURNAL   Nature 423 (6935), 87-91 (2003)
+   PUBMED   12721630
+REFERENCE   2  (residues 1 to 522)
+  AUTHORS   Candelon,B., Gailloux,K., Ehrlich,D.S. and Sorokin,A.
+  TITLE     The number of ribosomal RNA operons in Bacillus cereus
+  JOURNAL   Unpublished
+REFERENCE   3  (residues 1 to 522)
+  AUTHORS   Ivanova,N., Sorokin,A., Anderson,I., Galleron,N., Candelon,B.,
+            Kapatral,V., Bhattacharyya,A., Reznik,G., Mikhailova,N.,
+            Lapidus,A., Chu,L., Mazur,M., Goltsman,E., Larsen,N., D'Souza,M.,
+            Walunas,T., Grechkin,Y., Pusch,G., Haselkorn,R., Fonstein,M.,
+            Ehrlich,D.S.D., Overbeek,R. and Kyrpides,N.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (12-MAR-2003) INRA, Genetique Microbienne, Domaine de
+            Vilvert, Jouy en Josas 78352, France
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..522
+                     /organism="Bacillus cereus ATCC 14579"
+                     /strain="ATCC 14579"
+                     /db_xref="ATCC:14579"
+                     /db_xref="taxon:226900"
+                     /focus
+     Protein         1..522
+                     /product="NADH oxidase (NOXASE)"
+                     /EC_number="1.6.99.3"
+     Region          <103..240
+                     /region_name="mcbC-like_oxidoreductase"
+                     /note="This family is the oxydase domain of NRPS
+                     (non-ribosomal peptide synthetase) and other proteins that
+                     modify polypeptides by cyclizing a thioester to form a
+                     ring. These include epoB, part of the epothilone
+                     biosynthesis pathway; tubD, part of the tubulysin...;
+                     cd02142"
+                     /db_xref="CDD:239056"
+     Site            106
+                     /site_type="other"
+                     /note="NADPH bind site [chemical binding]"
+                     /db_xref="CDD:239056"
+     Site            order(214..215,236)
+                     /site_type="other"
+                     /note="putative FMN binding site [chemical binding]"
+                     /db_xref="CDD:239056"
+     Region          <369..491
+                     /region_name="mcbC-like_oxidoreductase"
+                     /note="This family is the oxydase domain of NRPS
+                     (non-ribosomal peptide synthetase) and other proteins that
+                     modify polypeptides by cyclizing a thioester to form a
+                     ring. These include epoB, part of the epothilone
+                     biosynthesis pathway; tubD, part of the tubulysin...;
+                     cd02142"
+                     /db_xref="CDD:239056"
+     CDS             1..522
+                     /locus_tag="BC_5081"
+                     /old_locus_tag="BC5081"
+                     /coded_by="complement(AE016877.1:4986506..4988074)"
+                     /transl_table=11
+ORIGIN      
+        1 mlktykdied flynlqyspa kasdfnldls nydrplpfki yrnresidld dnfpicindl
+       61 dgidysnfei isyllwytyg ftsynwltkp tlngqntsls ffrrsvasgg glypgeiyly
+      121 vesikgiksg lyyfdvrgpr lillregnfq efikkslqyn qdrnvyifit sfywknffky
+      181 lnfsyrlqgl digaivsqah liskklglns eiryhfddkk indflginae eessyvvlpi
+      241 dmdnnsykse nkvpafeyfk ndttfnyieh lnvgpknvcq diykinsnii nsglikvkkn
+      301 eiasfkeean vvhkekydyd ilkasvsris pgenflsdfl niqhvhkvld vgmqeqfknd
+      361 ifsdnysvlk dveiyfyank ieglpkgyyy ynpsnksfvl khkgdfssvf qenltrknfn
+      421 lvemplivhl vlnmkkfien mkfrgyrvmq meagrimhqi qlnaaglnlg shpmlgyrad
+      481 nleeffgiqn nitvqmsigk yrpllrltnn llnktkgeqf yv
+//
+

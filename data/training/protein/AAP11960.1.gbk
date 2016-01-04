@@ -1,0 +1,62 @@
+LOCUS       AAP11960                 247 aa            linear   BCT 30-JAN-2014
+DEFINITION  SnoK-like protein [Bacillus cereus ATCC 14579].
+ACCESSION   AAP11960
+VERSION     AAP11960.1  GI:29898688
+DBLINK      BioProject: PRJNA384
+            BioSample: SAMN02603340
+DBSOURCE    accession AE016877.1
+KEYWORDS    .
+SOURCE      Bacillus cereus ATCC 14579
+  ORGANISM  Bacillus cereus ATCC 14579
+            Bacteria; Firmicutes; Bacilli; Bacillales; Bacillaceae; Bacillus;
+            Bacillus cereus group.
+REFERENCE   1  (residues 1 to 247)
+  AUTHORS   Ivanova,N., Sorokin,A., Anderson,I., Galleron,N., Candelon,B.,
+            Kapatral,V., Bhattacharyya,A., Reznik,G., Mikhailova,N.,
+            Lapidus,A., Chu,L., Mazur,M., Goltsman,E., Larsen,N., D'Souza,M.,
+            Walunas,T., Grechkin,Y., Pusch,G., Haselkorn,R., Fonstein,M.,
+            Ehrlich,S.D., Overbeek,R. and Kyrpides,N.
+  TITLE     Genome sequence of Bacillus cereus and comparative analysis with
+            Bacillus anthracis
+  JOURNAL   Nature 423 (6935), 87-91 (2003)
+   PUBMED   12721630
+REFERENCE   2  (residues 1 to 247)
+  AUTHORS   Candelon,B., Gailloux,K., Ehrlich,D.S. and Sorokin,A.
+  TITLE     The number of ribosomal RNA operons in Bacillus cereus
+  JOURNAL   Unpublished
+REFERENCE   3  (residues 1 to 247)
+  AUTHORS   Ivanova,N., Sorokin,A., Anderson,I., Galleron,N., Candelon,B.,
+            Kapatral,V., Bhattacharyya,A., Reznik,G., Mikhailova,N.,
+            Lapidus,A., Chu,L., Mazur,M., Goltsman,E., Larsen,N., D'Souza,M.,
+            Walunas,T., Grechkin,Y., Pusch,G., Haselkorn,R., Fonstein,M.,
+            Ehrlich,D.S.D., Overbeek,R. and Kyrpides,N.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (12-MAR-2003) INRA, Genetique Microbienne, Domaine de
+            Vilvert, Jouy en Josas 78352, France
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..247
+                     /organism="Bacillus cereus ATCC 14579"
+                     /strain="ATCC 14579"
+                     /db_xref="ATCC:14579"
+                     /db_xref="taxon:226900"
+                     /focus
+     Protein         1..247
+                     /product="SnoK-like protein"
+     Region          10..201
+                     /region_name="PhyH"
+                     /note="Phytanoyl-CoA dioxygenase (PhyH); pfam05721"
+                     /db_xref="CDD:253349"
+     CDS             1..247
+                     /locus_tag="BC_5091"
+                     /old_locus_tag="BC5091"
+                     /coded_by="AE016877.1:4997392..4998135"
+                     /transl_table=11
+ORIGIN      
+        1 mltekqvnff kkngyliled ffslhelkqm kltfqhkikn qknskgfysg iltqhlnlwn
+       61 kdsffknlvf nkrisriake lletkniril qdhalikksi vgkatpwhqd fsyfpinepe
+      121 altvwipfqd vyekngcmsy lptsntlgrl tkvhmynidk pledinispa iaklkagsiv
+      181 ihhsltlhya ysnisdndrl ayaivymkde vtyngnrhpl idknlfaknq klegtnfpii
+      241 eesvtlt
+//
+

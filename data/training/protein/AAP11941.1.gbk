@@ -1,0 +1,82 @@
+LOCUS       AAP11941                 515 aa            linear   BCT 30-JAN-2014
+DEFINITION  ABC transporter ATP-binding protein [Bacillus cereus ATCC 14579].
+ACCESSION   AAP11941
+VERSION     AAP11941.1  GI:29898669
+DBLINK      BioProject: PRJNA384
+            BioSample: SAMN02603340
+DBSOURCE    accession AE016877.1
+KEYWORDS    .
+SOURCE      Bacillus cereus ATCC 14579
+  ORGANISM  Bacillus cereus ATCC 14579
+            Bacteria; Firmicutes; Bacilli; Bacillales; Bacillaceae; Bacillus;
+            Bacillus cereus group.
+REFERENCE   1  (residues 1 to 515)
+  AUTHORS   Ivanova,N., Sorokin,A., Anderson,I., Galleron,N., Candelon,B.,
+            Kapatral,V., Bhattacharyya,A., Reznik,G., Mikhailova,N.,
+            Lapidus,A., Chu,L., Mazur,M., Goltsman,E., Larsen,N., D'Souza,M.,
+            Walunas,T., Grechkin,Y., Pusch,G., Haselkorn,R., Fonstein,M.,
+            Ehrlich,S.D., Overbeek,R. and Kyrpides,N.
+  TITLE     Genome sequence of Bacillus cereus and comparative analysis with
+            Bacillus anthracis
+  JOURNAL   Nature 423 (6935), 87-91 (2003)
+   PUBMED   12721630
+REFERENCE   2  (residues 1 to 515)
+  AUTHORS   Candelon,B., Gailloux,K., Ehrlich,D.S. and Sorokin,A.
+  TITLE     The number of ribosomal RNA operons in Bacillus cereus
+  JOURNAL   Unpublished
+REFERENCE   3  (residues 1 to 515)
+  AUTHORS   Ivanova,N., Sorokin,A., Anderson,I., Galleron,N., Candelon,B.,
+            Kapatral,V., Bhattacharyya,A., Reznik,G., Mikhailova,N.,
+            Lapidus,A., Chu,L., Mazur,M., Goltsman,E., Larsen,N., D'Souza,M.,
+            Walunas,T., Grechkin,Y., Pusch,G., Haselkorn,R., Fonstein,M.,
+            Ehrlich,D.S.D., Overbeek,R. and Kyrpides,N.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (12-MAR-2003) INRA, Genetique Microbienne, Domaine de
+            Vilvert, Jouy en Josas 78352, France
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..515
+                     /organism="Bacillus cereus ATCC 14579"
+                     /strain="ATCC 14579"
+                     /db_xref="ATCC:14579"
+                     /db_xref="taxon:226900"
+                     /focus
+     Protein         1..515
+                     /product="ABC transporter ATP-binding protein"
+     Region          1..513
+                     /region_name="Uup"
+                     /note="ATPase components of ABC transporters with
+                     duplicated ATPase domains [General function prediction
+                     only]; COG0488"
+                     /db_xref="CDD:223562"
+     Region          4..230
+                     /region_name="ABCF_EF-3"
+                     /note="ATP-binding cassette domain of elongation factor 3,
+                     subfamily F; cd03221"
+                     /db_xref="CDD:213188"
+     Region          227..311
+                     /region_name="ABC_tran_2"
+                     /note="ABC transporter; pfam12848"
+                     /db_xref="CDD:257346"
+     Region          322..510
+                     /region_name="ABCF_EF-3"
+                     /note="ATP-binding cassette domain of elongation factor 3,
+                     subfamily F; cd03221"
+                     /db_xref="CDD:213188"
+     CDS             1..515
+                     /locus_tag="BC_5072"
+                     /old_locus_tag="BC5072"
+                     /coded_by="complement(AE016877.1:4978496..4980043)"
+                     /transl_table=11
+ORIGIN      
+        1 msllkvesls hsfidkvlye nasfdlhkge hmgivgqnga gkstlmkilv geiisdkgdi
+       61 kwqpniqigh ldqyaeideg ytisqylkra fydlyemekr mnklyeesam tgdenqllka
+      121 aeiqglleah dfysvdsitn kvaaglgidv igmnrvigel sggqrakvil akllleepni
+      181 llldeptnfl dkehvewlan ylmnfegafi vvshdfdfle kvtscicdve fgtvkkyygk
+      241 ysdfvrqkeh lrkdyirqyy aqqkkiekte eyirrniagv nskiaqgrrk qlqrmeriap
+      301 psfthkpsih fqelpisvqt vlevnnfevg ydfallpkln fsvmgrqkiv itgfngvgks
+      361 tllktivgni dsisgefhfs eqikigyyeq dlnwsndslt plqiiseqfp klnmkeirhh
+      421 laacgvkdth vsqeirtlsg geqskvklcg lllspcnlli ldeptnhlda eakealqkal
+      481 ikfkgsiilv sheasfyldw adsifhietg lvkgv
+//
+

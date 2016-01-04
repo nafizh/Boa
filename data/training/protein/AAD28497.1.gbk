@@ -1,0 +1,101 @@
+LOCUS       AF061787_4               580 aa            linear   BCT 03-MAY-1999
+DEFINITION  McjD (plasmid) [Escherichia coli].
+ACCESSION   AAD28497
+VERSION     AAD28497.1  GI:4731435
+DBSOURCE    accession AF061787.1
+KEYWORDS    .
+SOURCE      Escherichia coli
+  ORGANISM  Escherichia coli
+            Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacteriales;
+            Enterobacteriaceae; Escherichia.
+REFERENCE   1  (residues 1 to 580)
+  AUTHORS   Solbiati,J.O., Ciaccio,M., Farias,R.N. and Salomon,R.A.
+  TITLE     Genetic analysis of plasmid determinants for microcin J25
+            production and immunity
+  JOURNAL   J. Bacteriol. 178 (12), 3661-3663 (1996)
+   PUBMED   8655570
+REFERENCE   2  (residues 1 to 580)
+  AUTHORS   Solbiati,J.O., Ciaccio,M., Farias,R.N., Gonzalez-Pastor,J.E.,
+            Moreno,F. and Salomon,R.A.
+  TITLE     Sequence analysis of the four plasmid genes required to produce the
+            circular peptide antibiotic microcin J25
+  JOURNAL   J. Bacteriol. 181 (8), 2659-2662 (1999)
+   PUBMED   10198038
+REFERENCE   3  (residues 1 to 580)
+  AUTHORS   Solbiati,J.O., Ciaccio,M., Farias,R.N., Gonzalez-Pastor,J.E.,
+            Moreno,F. and Salomon,R.A.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (27-APR-1998) Departamento de Bioquimica de la Nutricion
+            (INSIBIO) and Instituto de Quimica Biologica 'Dr. Bernabe Bloj',
+            Universidad Nacional de Tucuman, Chacabuco 461, San Miguel de
+            Tucuman, Tucuman 4000, Republica Argentina
+COMMENT     Method: conceptual translation supplied by author.
+FEATURES             Location/Qualifiers
+     source          1..580
+                     /organism="Escherichia coli"
+                     /strain="AY25"
+                     /db_xref="taxon:562"
+                     /plasmid="pTUC100"
+     Protein         1..580
+                     /product="McjD"
+                     /function="confers immunity"
+                     /note="ABC transporter homolog"
+     Region          47..576
+                     /region_name="MdlB"
+                     /note="ABC-type multidrug transport system, ATPase and
+                     permease components [Defense mechanisms]; COG1132"
+                     /db_xref="CDD:224055"
+     Region          48..300
+                     /region_name="ABC_membrane"
+                     /note="ABC transporter transmembrane region; cl00549"
+                     /db_xref="CDD:271500"
+     Region          345..554
+                     /region_name="ABCC_MRP_Like"
+                     /note="ATP-binding cassette domain of multidrug resistance
+                     protein-like transporters; cd03228"
+                     /db_xref="CDD:213195"
+     Site            378..385
+                     /site_type="other"
+                     /note="Walker A/P-loop"
+                     /db_xref="CDD:213195"
+     Site            order(381..382,384..386,426,505..506,537)
+                     /site_type="other"
+                     /note="ATP binding site [chemical binding]"
+                     /db_xref="CDD:213195"
+     Site            423..426
+                     /site_type="other"
+                     /note="Q-loop/lid"
+                     /db_xref="CDD:213195"
+     Site            481..490
+                     /site_type="other"
+                     /note="ABC transporter signature motif"
+                     /db_xref="CDD:213195"
+     Site            501..506
+                     /site_type="other"
+                     /note="Walker B"
+                     /db_xref="CDD:213195"
+     Site            509..512
+                     /site_type="other"
+                     /note="D-loop"
+                     /db_xref="CDD:213195"
+     Site            533..539
+                     /site_type="other"
+                     /note="H-loop/switch region"
+                     /db_xref="CDD:213195"
+     CDS             1..580
+                     /gene="mcjD"
+                     /coded_by="AF061787.1:2754..4496"
+                     /transl_table=11
+ORIGIN      
+        1 merkqknslf nyiyslmdvr gkflffsmlf itslssiiis isplilakit dllsgslsnf
+       61 syeylvllac lymfcvisnk asvflfmilq sslrinmqkk mslkylrely nenitnlskn
+      121 nagyttqsln qasndiyilv rnvsqnilsp viqlistivv vlstkdwfsa gvfflyilvf
+      181 vifntrltgs laslrkhsmd itlnsyslls dtvdnmiaak knnalrlise ryedaltqen
+      241 naqkkywlls skvlllnsll avilfgsvfi ynilgvlngv vsighfimit syiillstpv
+      301 enigallsei rqsmsslagf iqrhaenkat spsipflnme rklnlsirel sfsysddkki
+      361 lnsvsldlft gkmysltgps gsgkstlvki isgyyknyfg diylndislr nisdedlnda
+      421 iyyltqddyi fmdtlrfnlr lanydasene ifkvlklanl svvnnepvsl dthlinrgnn
+      481 ysggqkqris larlflrkpa iiiideatsa ldyineseil ssirthfpda liinishrin
+      541 llecsdcvyv lnegnivasg hfrdlmvsne yisglasvte
+//
+

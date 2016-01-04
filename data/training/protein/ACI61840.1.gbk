@@ -1,0 +1,70 @@
+LOCUS       ACI61840                 541 aa            linear   BCT 31-JAN-2014
+DEFINITION  Putative salivaricin A modification enzyme, amino acid dehydration
+            [Streptococcus pyogenes NZ131].
+ACCESSION   ACI61840
+VERSION     ACI61840.1  GI:209541264
+DBLINK      BioProject: PRJNA20707
+            BioSample: SAMN02604236
+DBSOURCE    accession CP000829.1
+KEYWORDS    .
+SOURCE      Streptococcus pyogenes NZ131
+  ORGANISM  Streptococcus pyogenes NZ131
+            Bacteria; Firmicutes; Bacilli; Lactobacillales; Streptococcaceae;
+            Streptococcus.
+REFERENCE   1  (residues 1 to 541)
+  AUTHORS   McShan,W.M., Ferretti,J.J., Karasawa,T., Suvorov,A.N., Lin,S.,
+            Qin,B., Jia,H., Kenton,S., Najar,F., Wu,H., Scott,J., Roe,B.A. and
+            Savic,D.J.
+  TITLE     Genome sequence of a nephritogenic and highly transformable M49
+            strain of Streptococcus pyogenes
+  JOURNAL   J. Bacteriol. 190 (23), 7773-7785 (2008)
+   PUBMED   18820018
+REFERENCE   2  (residues 1 to 541)
+  AUTHORS   McShan,W.M.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (13-SEP-2007) Pharmaceutical Sciences, University of
+            Oklahoma Health Sciences Center, P.O. Box 26901, Oklahoma City, OK
+            73190, USA
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..541
+                     /organism="Streptococcus pyogenes NZ131"
+                     /strain="NZ131; ATCC BAA-1633"
+                     /serotype="M49"
+                     /culture_collection="ATCC:BAA-1633"
+                     /db_xref="taxon:471876"
+                     /focus
+     Protein         1..541
+                     /product="Putative salivaricin A modification enzyme,
+                     amino acid dehydration"
+     Region          1..>541
+                     /region_name="LcnDR2"
+                     /note="Lantibiotic modifying enzyme [Defense mechanisms];
+                     COG4403"
+                     /db_xref="CDD:226837"
+     Region          67..>512
+                     /region_name="LanC_like"
+                     /note="LanC-like proteins. LanC is the cyclase enzyme of
+                     the lanthionine synthetase. Lanthionine is a lantibiotic,
+                     a unique class of peptide antibiotics. They are
+                     ribosomally synthesized as a precursor peptide and then
+                     post-translationally modified to contain...; cl04955"
+                     /db_xref="CDD:262377"
+     CDS             1..541
+                     /gene="salB"
+                     /locus_tag="Spy49_1582c"
+                     /coded_by="complement(CP000829.1:1561242..1562867)"
+                     /transl_table=11
+ORIGIN      
+        1 mikrdelkle yqnhqfyeyv nsifdydild tsiretsevl rkktyklfys efenqlfeti
+       61 mflsmktlvl dinhfskeie nkseayeqym qqireengin hffdrypyll kqinkevgli
+      121 eesysllfdr fledlseirs cfniseplsn vafslgdshs kkqtvvkiaf keksvyykpk
+      181 syhshsille ltsllkssni psfslpkslv kadycwqlgv aytssnkdev akiyfkygvl
+      241 aafseifsit dlhmenvivs rgdlylidae tffqrklnvq nqnfegitvd tyhriyetsl
+      301 snglfpvqfe knsapnvsgi sgkggkrkkg kyelinknrg dmklvkvdyf qedgfniptl
+      361 ngkvvepldy aneiisgfre cyifllsqrs kikgivegfp elksralfrn tsdygkflqa
+      421 stnpkylfse kkkknlfsil yeakhiehfi vdneikdlmn gdipyfsmdt rgnvynsvgt
+      481 lignlgdtts lfdsitilnd erlkftcell eivlkkpikh werekgksyq flsissehyl
+      541 l
+//
+
