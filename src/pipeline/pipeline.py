@@ -644,7 +644,7 @@ if __name__=="__main__":
     #    proc.cluster()
         proc.blastContextGenes()
         proc.hmmerGenes()
-        proc.cliqueFilter
+    #    proc.cliqueFilter()
     #    proc.naiveBayes()
 
         
