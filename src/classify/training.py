@@ -79,7 +79,7 @@ class Labels(object):
                 else:
                     toks = re.split("\s+",ln)
                     proteinID,label = toks[0],toks[1]
-                    print proteinID,label
+                    print proteinID, label
                 #    print "Hello nafiz"
                     #Each label has a dictionary
                     #proteinID:(label, description)       

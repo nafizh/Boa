@@ -56,7 +56,8 @@ class HMM(object):
         for log in self.logs:
             if os.path.exists(log): os.remove(log)
     """Runs Viterbi algorithm on an input protein fasta"""
-    def hmmsearch(self,infasta,maxpower=False):
+    def hmmsearch(self, infasta, maxpower = False):
+        print "Running hmmsearch"
         if maxpower:
             cmd = "hmmsearch --noali --notextw --max --domtblout %s %s %s"%(self.table,self.hmm,infasta)
         else:
@@ -73,34 +74,38 @@ class HMM(object):
         if self.module==quorum: proc.submit()
         return proc 
     """Builds an HMM for a cluster"""
-    def hmmbuild(self,module=subprocess):
-        cmd = "hmmbuild %s %s "%(self.hmm,self.sto)
+    def hmmbuild(self, module = subprocess):
+        print "Running hmmbuild"
+        cmd = "hmmbuild %s %s " % (self.hmm, self.sto)
         #Changed from self.module.Popen -> module.Popen - Nafiz
-        proc = subprocess.Popen(cmd, stderr=open(self.logs[0],'w+'),shell=True)
-        if self.module==quorum: proc.submit()
+        proc = subprocess.Popen(cmd, stderr = open(self.logs[0],'w+'), shell = True)
+        if self.module == quorum: proc.submit()
         #proc.wait()
         return proc
     """Perform multiple alignment with Muscle on a single cluster"""
-    def multipleAlignment(self,module=subprocess,msa=MAFFT,maxiters=20):
-        if self.seqcount(self.clusterfa)==1:
+    def multipleAlignment(self, module=subprocess, msa = MAFFT, maxiters = 20):
+        if self.seqcount(self.clusterfa) == 1:
             self.sto = self.clusterfa
             return None
         else:
             #mafft class in mafft.py is being called - Nafiz
-            cw = msa(self.clusterfa,self.sto,module)
+            cw = msa(self.clusterfa, self.sto, module)
             self.clustal = cw
-            if msa==Muscle:
-                proc = cw.run(fasta=True,maxiters=maxiters)
+            if msa == Muscle:
+                proc = cw.run(fasta = True, maxiters = maxiters)
             else:
-                proc = cw.run(fasta=True,maxiters=maxiters,threads=self.threads)
+                print "Running MAFFT"
+                proc = cw.run(fasta = True, maxiters = maxiters, threads = self.threads)
             #cw.outputSTO()
             return cw
-    def seqcount(self,fname):
+    def seqcount(self, fname):
         seqs = list(SeqIO.parse(open(fname,'r'),'fasta'))
         return len(seqs)
+
+
 """Performs clustering and runs HMMER on every cluster"""
 class HMMER(object):
-    def __init__(self,fasta="",
+    def __init__(self, fasta="",
                  module=subprocess,
                  threads=8,
                  minClusters=2):
@@ -108,7 +113,7 @@ class HMMER(object):
         directory = os.path.dirname(fasta)
         #basename = os.path.splitext(os.path.basename(fasta))[0]
         self.basename = os.path.basename(fasta)
-        self.clrreps = "%s/%s_cluster"%(directory,self.basename)
+        self.clrreps = "%s/%s_cluster"%(directory, self.basename)
         self.cluster = "%s.clstr"%(self.clrreps)
         self.fasta = fasta
         self.clusterfas = []
@@ -136,7 +141,7 @@ class HMMER(object):
             if self.module==quorum: p.erase_files()
         
     """Spawn hmms from each cluster"""
-    def HMMspawn(self,msa=MAFFT,njobs=4,maxiters=20):
+    def HMMspawn(self, msa = MAFFT, njobs = 4, maxiters = 20):
         procs = []
         i = 0
         #print "Hello Rahi"
@@ -147,24 +152,25 @@ class HMMER(object):
 
         #looping over the transport.fa.cluster0.fa type files - Nafiz
         for clrfa in self.clusterfas:
-            hmm = HMM(clrfa,module=self.module,threads=self.threads)
+            hmm = HMM(clrfa, module = self.module, threads = self.threads)
             self.hmms.append(hmm)
+
         for hmm in self.hmms:
-            proc = hmm.multipleAlignment(msa=msa,maxiters=maxiters)
-            if proc!=None:
+            proc = hmm.multipleAlignment(msa = msa, maxiters = maxiters)
+            if proc != None:
                 procs.append(proc)
             i+=1
-            if i==njobs: #make sure jobs don't overload
-                self.wait(procs,fasta=True)
+            if i == njobs: #make sure jobs don't overload
+                self.wait(procs, fasta = True)
                 procs,i = [],0
-        self.wait(procs,fasta=True)
+        self.wait(procs, fasta = True)
         
-        procs,i = [],0
+        procs, i = [], 0
         for hmm in self.hmms:
             proc = hmm.hmmbuild()
             procs.append(proc)
             i+=1
-            if i==njobs: #make sure jobs don't overload
+            if i == njobs: #make sure jobs don't overload
                 self.wait(procs)
                 procs,i = [],0
         self.wait(procs)
@@ -172,11 +178,11 @@ class HMMER(object):
             
             
     """Performs HMMER using all clusters on infasta"""
-    def search(self,infasta,out,maxpower=False,njobs=4):
+    def search(self, infasta, out, maxpower = False, njobs = 4):
         procs = []
         i = 0
         for hmm in self.hmms:
-            proc = hmm.hmmsearch(infasta,maxpower)
+            proc = hmm.hmmsearch(infasta, maxpower)
             self.tables.append(hmm.table)
             procs.append(proc)
             i+=1
@@ -194,8 +200,8 @@ class HMMER(object):
                             outfile.write(line)
                         
     """Obtains ids for all of the sequences and write them into separate cluster files"""
-    def writeClusters(self,similarity=0.7,memory=800):
-        clusterProc = CDHit(self.fasta,self.clrreps,similarity,self.threads,memory)
+    def writeClusters(self, similarity = 0.7, memory = 800):
+        clusterProc = CDHit(self.fasta, self.clrreps, similarity, self.threads, memory)
         clusterProc.run()
         clusterProc.parseClusters()    
         i = 0
@@ -205,19 +211,20 @@ class HMMER(object):
         
         for cluster in clusterProc.clusters:
             print cluster
-            if len(cluster.seqs)<self.minClusters:#filter out small clusters
+            if len(cluster.seqs) < self.minClusters: #filter out small clusters
                 continue
-            outfile = '%s/%s.cluster%d.fa'%(directory,self.basename,i)
+            outfile = '%s/%s.cluster%d.fa' % (directory, self.basename, i)
             self.clusterfas.append(outfile)
             handle = open(outfile,'w')
             for subc in cluster.seqs:
                 subtitle = cluster_id_reg.findall(subc)[0][:-3]
                 print subtitle
                 record = record_dict[subtitle]
-                handle.write(">%s\n"%record.id)
-                handle.write("%s\n"%str(record.seq))
+                handle.write(">%s\n" % record.id)
+                handle.write("%s\n" % str(record.seq))
             handle.close()
             i+=1
+
 """ Parse the output of hmmsearch output"""            
 def parse(hmmerout):
     entries = []

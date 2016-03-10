@@ -166,15 +166,16 @@ class TabRecord():
 
 class BLAST(object):
     def __init__(self,bacteriocins_file,intergene_file,intermediate,evalue):
-        self.pid = os.getpid() #Use current pid to name temporary files
-        code = hash(self.pid^(int(time.time())%self.pid))
-        self.protein_db = bacteriocins_file
-        self.blastfile = "%s/%d.out"%(intermediate,code)
-        self.genomic_query = intergene_file
-        self.intermediate = intermediate
-        self.evalue = evalue
-        self.blastcmd = ''
-        self.formatdbcmd = ''
+      """bacteriocins_file =  all.fna, integene_file =  bagel.fa"""
+      self.pid = os.getpid() #Use current pid to name temporary files
+      code = hash(self.pid^(int(time.time())%self.pid))
+      self.protein_db = bacteriocins_file
+      self.blastfile = "%s/%d.out"%(intermediate,code)
+      self.genomic_query = intergene_file 
+      self.intermediate = intermediate
+      self.evalue = evalue
+      self.blastcmd = ''
+      self.formatdbcmd = ''
 
     def formatDBCommand(self):
         return self.formatdbcmd
@@ -189,9 +190,10 @@ class BLAST(object):
     Build database using intergenic regions
     """
     def buildDatabase(self,base="nucleotide"):
+        print "Building database for blasting - inside blast.buildDatabase() function"
         #cmd="formatdb -i %s -p T -o T"%(self.protein_db)
         char = "F" if base=="nucleotide" else "T"
-        cmd="formatdb -i %s -p %s"%(self.protein_db,char)
+        cmd="formatdb -i %s -p %s"%(self.protein_db, char)
         #char = "nucl" if base=="nucleotide" else "prot"
         #cmd="makeblastdb -in %s -dbtype %s"%(self.protein_db,char)
         self.formatdbcmd = cmd
@@ -203,6 +205,7 @@ class BLAST(object):
     cmd: any blastall command (e.g. blastn, tblastn, blastx, blastp)
     """
     def run(self,blast_cmd="blastn",mode="xml",num_threads=1):
+        print "Inside blast.run() function"
         outHandle = open(self.blastfile,'w')
         #cmd for blast
         #m = 7 if mode=='xml' else 8
@@ -221,6 +224,7 @@ class BLAST(object):
 
     
     def parseBLAST(self,mode):
+        "Parsing blast result"
         if mode=="xml":
             return self.parseXML()
         elif mode=="coord":

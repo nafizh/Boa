@@ -87,21 +87,26 @@ class BacteriocinHandler:
 """
 Given a set of genomes and bacteriocins, determine which bacteriocins are in intergenic regions
 """
-def identifyIntergenic(bacteriocins,intergene_file):
+def identifyIntergenic(bacteriocins, intergene_file):
     print "Building intergenic dictionary"
     print "filename",intergene_file
     print "Number of bacteriocins",len(bacteriocins)
+
+
     intergeneObj = intergene.IntergeneHandler(intergene_file)    
-    intergeneObj.getIntervals()
+    intergeneObj.getIntervals() # getting the start and end coordinates in intergeneDB.fa file
     intergeneDict = dict()
     for bact in bacteriocins:
-        gene = bact.sbjct_id,bact.sbjct_start,bact.sbjct_end,bact.strand
+        gene = bact.sbjct_id, bact.sbjct_start, bact.sbjct_end, bact.strand
         overlaps = intergeneObj.overlapIntergene(gene)
-        intergeneDict[(bact.sbjct_id,bact.sbjct_start,bact.sbjct_end,bact.strand)] = overlaps
+        intergeneDict[(bact.sbjct_id, bact.sbjct_start, bact.sbjct_end, bact.strand)] = overlaps
     return intergeneDict
 
-""" Write bacteriocins to a tab delimited file """
-def writeBacteriocins(bacteriocins,intergeneDict,outHandle,genes=False):
+""" Write bacteriocins to a "blasted.0.bacteriocins.txt" type file """
+def writeBacteriocins(bacteriocins, intergeneDict, outHandle,genes=False):
+    # bacteriocins : the blast result between all.fna and bagel.fa
+    # intergeneDict : result from identifyIntergenic() function
+    # outHandle : "blasted.0.bacteriocins.txt" type file
     for bacteriocin in bacteriocins:
         if genes:  bacteriocin,gene = bacteriocin
         inIntergene = intergeneDict[(bacteriocin.sbjct_id,
@@ -138,12 +143,12 @@ def writeBacteriocins(bacteriocins,intergeneDict,outHandle,genes=False):
                                  bacteriocin.sbjct)
         outHandle.write(result_str)
 
-
+"""Writes to blasted.0.annotated.txt type files"""
 def writeAnnotatedGenes(annot_bact_pairs,outHandle):
     #print "Writing Annotated Genes"
     #print "Annotations",annot_bact_pairs
     for annot_bact in annot_bact_pairs:
-        annot,bacteriocin = annot_bact
+        annot, bacteriocin = annot_bact
         annot_st,annot_end,annot_org,annot_strand,annot_locus,annot_protid,annot_seq = annot
         bacID    = bacteriocin.query_id
         organism = bacteriocin.sbjct_id
@@ -178,13 +183,23 @@ def main(genome_files,
          bacteriocin_radius,
          verbose,
          keep_tmp):
+
+    """
+    bacteriocinsOut = "blasted.0.bacteriocins.txt" type files
+    annotationsOut = "blasted.0.annotated.txt" type files"
+    """
+
+    print "Inside bacteriocin.main function"
     for gnome in genome_files:
+        print "genome: ", gnome
         bacthr = BacteriocinHandler(gnome,
                                     intermediate,
                                     bac_evalue,
                                     num_threads,
                                     verbose,
                                     keep_tmp)
+
+        # bacteriocins is the blast result between all.fna and bagel.fa
         bacteriocins = bacthr.getAlignedBacteriocins(bacteriocin_file,
                                                      bac_evalue,
                                                      num_threads,
@@ -193,11 +208,17 @@ def main(genome_files,
         if bacteriocins == None: continue
         if verbose: print "Bacteriocins found\n","\n".join(map(str,bacteriocins))
         if verbose: print "Number of original bacteriocins",len(bacteriocins)
+
+
+        # intergene_file = intergeneDB.fa
         intergeneDict = identifyIntergenic(bacteriocins,intergene_file)
-        writeBacteriocins(bacteriocins,intergeneDict,bacteriocinsOut)
+        
+        writeBacteriocins(bacteriocins, intergeneDict, bacteriocinsOut)
+        
+        # annotations_file is annotated_genesDB.fa file
         annots = [annot for annot in annotation.AnnotatedGenes(annotations_file)]
-        annots,bacteriocinNeighborhoods = interval_filter.annotatedGenes(annots,bacteriocins,bacteriocin_radius)
-        annot_bact_pairs = zip(annots,bacteriocinNeighborhoods)
+        annots, bacteriocinNeighborhoods = interval_filter.annotatedGenes(annots, bacteriocins, bacteriocin_radius)
+        annot_bact_pairs = zip(annots, bacteriocinNeighborhoods)
         writeAnnotatedGenes(annot_bact_pairs, annotationsOut)
         
         #pickle.dump(intergeneDict,open("intergene.dict",'w'))

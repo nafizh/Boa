@@ -20,6 +20,8 @@ for directory_name in os.listdir(base_path):
 import text
 import cPickle
 import gzip
+
+
 class GenBankTable(object):
     def __init__(self,genbank_files=[]):
         self.genbank_files = genbank_files

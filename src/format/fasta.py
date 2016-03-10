@@ -40,15 +40,16 @@ def reverse_complement(fastain,revfasta):
         SeqIO.write(rev_seq,out,"fasta")
     out.close()
 
-def remove_duplicates(fastain,fastaout):
+def remove_duplicates(fastain, fastaout):
     ids = set()
     out = open(fastaout,'w')
     for seq_record in SeqIO.parse(fastain,"fasta"):
         ID = seq_record.id
         if ID not in ids:
             ids.add(ID)
-            SeqIO.write(seq_record,out,"fasta")
+            SeqIO.write(seq_record, out, "fasta")
     out.close() 
+    
 """ Make human readable fasta format """
 def format(seqin,width=60):
     seq = []
@@ -286,7 +287,8 @@ def write_orfs(indexer,hits,out):
             acc,clrname,score,hmm_st,hmm_end,env_st,env_end,description=hit
             seq = indexer.fetch(acc,env_st,env_end)
             outhandle.write(">%s\n%s\n"%('|'.join(map(str,hit)),
-                                         format(seq)))           
+                                         format(seq)))
+
 """Merge all fasta files together, create fasta index, six-frame translated
 genomes and six-frame translation index"""
 def go(rootdir,
@@ -294,6 +296,7 @@ def go(rootdir,
        all_faidx,
        six_frame_genome,
        six_frame_faidx):
+    print "Inside fasta.go function"
     outhandle = open(all_fasta,'w')
     for root, subFolders, files in os.walk(rootdir):
         for fname in files:

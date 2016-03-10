@@ -9,7 +9,7 @@ from Bio.SeqRecord import SeqRecord
 import os
 
 from Bio.Blast import NCBIXML
-from Bio.Blast import NCBIStandalone
+#from Bio.Blast import NCBIStandalone
 
 from collections import defaultdict
 
@@ -45,7 +45,15 @@ class IntergeneHandler:
     Retrieves intervals that can be used to determine if bacteriocin overlap any intergenic regions
     """
     def getIntervals(self):
-        self.intergeneDict = defaultdict( IntervalTree )
+        """
+        Example:
+        input: ">NC_018524-ign-1:5327-5491+ NC_018524 5327-5491 +"
+
+        record.id = NC_018524-ign-1:5327-5491+
+        match = ('NC_018524', '5327', '5491', '+')
+        accession,start,end,strand = NC_018524, 5327, 5491, +
+        """
+        self.intergeneDict = defaultdict( IntervalTree ) # IntervalTree from bx package
         for record in SeqIO.parse(open(self.intergene_file,'r'),"fasta"):
             #print record.id
             #print loc_reg.findall(record.id)
@@ -61,7 +69,7 @@ class IntergeneHandler:
     def overlapIntergene(self,gene):
         accession,start,end,strand = gene
         tree = self.intergeneDict[(accession,strand)]
-        overlaps = tree.find(start,end)
+        overlaps = tree.find(start,end) # example use of .find function - https://www.biostars.org/p/99/#101
         return len(overlaps)>0
         # #ints = self.intergeneDict[(accession,strand)]
         # ints = intervals.Intervals()
@@ -85,8 +93,8 @@ def get_interregions(genbank_path,output_file,intergene_length=1,write_flag = 'w
         # Loop over the genome file, get the CDS features on each of the strands
         for feature in seq_record.features:
             if feature.type == 'CDS':
-                mystart = feature.location._start.position
-                myend = feature.location._end.position
+                mystart = feature.location.start.position
+                myend = feature.location.end.position
                 if feature.strand == -1:
                     cds_list_minus.append((mystart,myend,-1))
                 elif feature.strand == 1:
@@ -126,6 +134,7 @@ def get_interregions(genbank_path,output_file,intergene_length=1,write_flag = 'w
 
 
 def go(root_dir,output_file):
+    print "Inside intergene.go"
     outHandle = open(output_file,'w')
     for root, subFolders, files in os.walk(root_dir):
         for fname in files:

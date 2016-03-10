@@ -51,8 +51,10 @@ class ContextGeneBLAST(object):
     def cleanup(self):
         os.remove(self.blastdb)
         self.blast_proc.cleanup()
+
     """ Build blast database and find context genes"""
-    def find(self,queryFile,formatdb=True):
+    def find(self, queryFile, formatdb=True):
+        print "Inside context_gene.find() function"
         trainingEntries = self.labels.getTrainingSequences()
         handle = open(self.blastdb,'w')
         #with open(self.blastdb,'w') as handle:
@@ -71,7 +73,7 @@ class ContextGeneBLAST(object):
                             num_threads=self.threads)
         hits = self.blast_proc.parseBLAST("xml")
         return hits
-    def write(self,hits,output):
+    def write(self, hits, output):
         #with open(output,'w') as handle:
         handle = open(output,'w')
         for hit in hits:
@@ -119,7 +121,7 @@ if __name__=="__main__":
                                args.evalue,
                                args.num_threads)
          hits = cg.find(args.query)
-         cg.write(hits,args.output)
+         cg.write(hits, args.output)
          cg.cleanup()
      else:
          del sys.argv[1:]

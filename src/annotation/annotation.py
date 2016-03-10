@@ -32,6 +32,7 @@ class AnnotatedGenes(object):
             raise StopIteration()
 
 def go(root_dir,output_file,index_obj=None,types=[".gbk",".gff"]):
+    print "Inside annotation.go"
     outHandle = open(output_file,'w')
     for root, subFolders, files in os.walk(root_dir):
         for fname in files:

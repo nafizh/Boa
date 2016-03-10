@@ -12,7 +12,7 @@ import glob
 import multiplealignment
 
 class MAFFT(multiplealignment.MultipleAlignment):
-    def __init__(self,input_file,output_file,module=subprocess):
+    def __init__(self, input_file, output_file, module=subprocess):
         self.input = input_file #input fasta file
         self.output = output_file
         basename,_ = os.path.splitext(input_file)
@@ -20,7 +20,7 @@ class MAFFT(multiplealignment.MultipleAlignment):
         self.aln = "%s.aln"%basename
         self.module = module
         
-    def run(self,fasta=False,maxiters=4,threads=8):
+    def run(self, fasta=False, maxiters = 4, threads = 8):
         
         if fasta:
             cline = "fftns --thread %d %s > %s"%(threads,self.input,self.output)
@@ -30,14 +30,13 @@ class MAFFT(multiplealignment.MultipleAlignment):
             out = self.aln
         print cline
         
-        if self.module==quorum:
+        if self.module == quorum:
             child = self.module.Popen(str(cline),
                                   shell=True,
                                   threads=threads) 
             child.submit()
         else:
-            child = self.module.Popen(str(cline),
-                                      shell=True)
+            child = self.module.Popen(str(cline), shell=True)
                                   
         self.child = child
 

@@ -3,7 +3,7 @@ from Bio import SeqIO, SeqFeature
 from Bio.SeqRecord import SeqRecord
 
 from Bio.Blast import NCBIXML
-from Bio.Blast import NCBIStandalone
+#from Bio.Blast import NCBIStandalone
 
 import sys
 import os

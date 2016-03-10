@@ -34,7 +34,7 @@ class Cluster(object):
     #        raise StopIteration()
 
 class CDHit(object):
-    def __init__(self,input_file,output_file,similarity,numThreads=1,mem=800):
+    def __init__(self, input_file, output_file, similarity, numThreads = 1, mem = 800):
         self.input = input_file
         self.output = output_file
         self.similarity = similarity
@@ -63,9 +63,10 @@ class CDHit(object):
     Runs CD hit script
     """
     def run(self):
-        cmd = "cdhit -i %s -o %s -d 200 -c %f -M %d -T %d" %(self.input,self.output,
-                                                             self.similarity,self.mem,self.numThreads)
-        proc = subprocess.Popen(cmd,shell=True)
+        print "Running CDHit"
+        cmd = "cdhit -i %s -o %s -d 200 -c %f -M %d -T %d" %(self.input, self.output,
+                                                             self.similarity, self.mem, self.numThreads)
+        proc = subprocess.Popen(cmd, shell = True)
         proc.wait()
 
     cluster_reg = re.compile(r"")
@@ -76,7 +77,7 @@ class CDHit(object):
     """
     def parseClusters(self):
         self.clusters = list()
-        with open(self.cluster_out,'r') as handle:
+        with open(self.cluster_out, 'r') as handle:
             for ln in handle:
                 ln = ln.rstrip()
                 if ln[0]==">":

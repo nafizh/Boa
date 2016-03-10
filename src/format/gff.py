@@ -48,8 +48,8 @@ class GFF():
                 if ln[0]=='#': continue
                 ln = ln.rstrip()
                 toks = ln.split('\t')
-                species,_,type,st,end,_,strand,_,text = toks
-                if type!="gene":continue
+                species,_,type_,st,end,_,strand,_,text = toks
+                if type_!="gene":continue
                 st,end = map(int,[st,end])
                 if strand=='+':
                     sequence = self.indexer.fetch(species,st,end)
@@ -67,8 +67,8 @@ class GFF():
                 ln = ln.rstrip()
                 toks = ln.split('\t')
                
-                species,_,type,st,end,_,strand,_,text = toks
-                if type=='CDS': 
+                species,_,type_,st,end,_,strand,_,text = toks
+                if type_=='CDS': 
                     st,end = map(int,[st,end])
                     
                     self.inttrees[(species,strand)].add( st,end,
@@ -81,8 +81,8 @@ class GFF():
                 if ln[0] == '#': continue
                 ln = ln.rstrip()
                 toks = ln.split('\t')
-                species,_,type,st,end,_,strand,_,text = toks
-                if type!='CDS': continue
+                species,_,type_,st,end,_,strand,_,text = toks
+                if type_!='CDS': continue
                 if prot_reg.findall(text)==[]:
                     print "No protid in",text
                     continue
@@ -91,13 +91,14 @@ class GFF():
                 
     
     """ Figures out which orfs overlap with HMMER hits """
-    def call_orfs(self,hits,faaindex):
+    def call_orfs(self, hits, faaindex):
         records = []
         for hit in hits:
             protid,clrname,full_evalue,hmm_st,hmm_end,env_st,env_end,description=hit
             if protid not in self.proteins:
                 print "%s is missing !"%protid
             else:
+                print "not missing"
                 species,st,end,strand = self.proteins[protid]
                 env_st,env_end = map(int,[st,end])
                 seq = faaindex[protid]

@@ -13,14 +13,15 @@ from bx.intervals import *
 from collections import defaultdict
 import fasta
 import re
+
 """
 Filters out all query sequences that don't fall in one of the intervals
 Note: returns a list of all of the overlapping intervals
-intervalDict: A dictionary of intervals indexed by (organismID,strand)
-queries: A list of query objects with
-        (start,end,orgid,strand,query_obj)
+
+intervalDict: A dictionary of intervals indexed by (organismID, strand)
+queries: A list of query objects with (start, end, orgid, strand, query_obj)
 """
-def spatialFilter(queries,intervalDict,radius):
+def spatialFilter(queries, intervalDict, radius):
     filtered = []
     geneNeighborhoods = []
     for query in queries:
@@ -28,12 +29,12 @@ def spatialFilter(queries,intervalDict,radius):
         start,end,orgid,strand = header
         #print "Org id",orgid,orgid not in intervalDict
         if orgid not in intervalDict: continue
-        nearTargets = intervalDict[orgid].find( start,end )
+        nearTargets = intervalDict[orgid].find(start, end)
         if len(nearTargets)>0:
             for geneobj in nearTargets:
                 filtered.append(query_obj)
                 geneNeighborhoods.append(geneobj)
-    return filtered,geneNeighborhoods
+    return filtered, geneNeighborhoods
                
 """
 Filter out all annotations that are not within the radius of a bacteriocin
@@ -50,15 +51,15 @@ def annotatedGenes(annots,bacteriocins,radius):
         #orgid = annot_reg.findall(orgid)[0]
         
         stBound,endBound = start-radius,end+radius
-        intervalDict[orgid].add( stBound,endBound,bact )                                                 
+        intervalDict[orgid].add(stBound, endBound, bact)                                                 
     headers = []
     for a in annots: 
-        start,end,orgid,strand = a[0],a[1],a[2],a[3];
-        headers.append( (start,end,orgid,strand) )
-    queries = zip(headers,annots) 
+        start, end, orgid, strand = a[0], a[1], a[2], a[3]
+        headers.append((start,end,orgid,strand))
+    queries = zip(headers, annots) 
     
-    filtered,annotNeighborhoods = spatialFilter(queries,intervalDict,radius)
-    return filtered,annotNeighborhoods
+    filtered, annotNeighborhoods = spatialFilter(queries, intervalDict, radius)
+    return filtered, annotNeighborhoods
 
 """
 Filters out bacteriocins not contained in a gene neighborhood

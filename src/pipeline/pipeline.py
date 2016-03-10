@@ -1,5 +1,3 @@
-
-
 """
 1. Gather blasted bacteriocins and context genes
 2. Cluster bacteriocins and context genes
@@ -42,6 +40,10 @@ import gff
 import hmmer #Nafiz
 from mafft import MAFFT #Nafiz
 import faa #Nafiz
+
+import interval_filter
+import clique_filter
+import threshold_filter
 
 class PipelineHandler(object):
     def __init__(self,
@@ -134,7 +136,6 @@ class PipelineHandler(object):
 
         print "Preprocessing"
         #Combine all genome files into a single genome fasta file
-        #https://github.com/mortonjt/Boa/blob/master/src/format/fasta.py
         fasta.go(self.genome_dir,
                  self.all_fasta,
                  self.all_faidx,
@@ -144,13 +145,16 @@ class PipelineHandler(object):
         indexer.index()
         indexer.load()
 
-        #https://github.com/mortonjt/Boa/blob/master/src/genome/intergene.py
+        # outputs intergeneDB.fa which is combination of all intergene sequences
+        # from all .gbk files
         intergene.go(self.genome_dir,self.intergenes)
 
-        #https://github.com/mortonjt/Boa/blob/master/src/annotation/annotation.py
-        annotation.go(self.genome_dir,self.annotated_genes,index_obj=indexer) 
+        # outputs annotated_genesDB.fa which is the combination of all translated 
+        # protein sequences from all .gbk files
+        annotation.go(self.genome_dir,self.annotated_genes, index_obj = indexer) # has to change it back, add index_obj= indexer
         
-        #Combine all gff files together
+        # Combine all gff files together
+        print "Combining all gff files together"
         outhandle = open(self.gff,'w')
         for root, subFolders, files in os.walk(self.genome_dir):
             for fname in files:
@@ -161,6 +165,7 @@ class PipelineHandler(object):
                     shutil.copyfileobj(open(absfile),outhandle)
         outhandle.close()
         
+        print "Reformating fasta files"
         tmpfile = "tmp%d.faa"%(os.getpid())
         outhandle = open(tmpfile,'w')
         for root, subFolders, files in os.walk(self.genome_dir):
@@ -188,6 +193,12 @@ class PipelineHandler(object):
         3) Set intersections of all context genes present
         4) Set intersection of key context genes present
         5) Use e-values for tie breakers
+
+        Input --> "all.fna" file
+        Output --> "blasted_bacteriocins.fa" (basically the blast result of all.fna and bagel.fa)
+                   "cand_context_genes.fa" (take out all entries in annotatedgenesDB.fa file that
+                                            are not within a set threshold of the results of the blast
+                                            result entries of all.fna and bagel.fa. The resulting file.)
     """
     def blast(self, njobs = 5):
         # print "Blasting"
@@ -205,9 +216,10 @@ class PipelineHandler(object):
         #                  self.verbose,
         #                  False)
 
-        print "Blasting"
+        
         
         """ First split up the main bacteriocin file into a bunch of smaller files"""
+        print "Splitting up the main bacteriocin file into a bunch of smaller files"
         split_bacfiles = ["%s/bacteriocin.%d"%(self.intermediate,i)
                           for i in xrange(njobs)]
         self.split_files += split_bacfiles
@@ -228,11 +240,14 @@ class PipelineHandler(object):
 
         print "evalue",self.bac_evalue
 
+
+        print "Blasting"
+
         if self.formatdb: 
             blast_cmd = ' '.join([
-                        """module load anaconda; module load blast;module load blast+;"""
+                    #    """module load anaconda; module load blast;module load blast+;"""
                         """python %s/src/genome/bacteriocin.py  """,
-                        """ --genome-files %s        """,
+                        """ --genome-files=%s        """,
                         """ --annotated-genes=%s     """,
                         """ --intergenes=%s          """,
                         """ --bacteriocins=%s        """,
@@ -248,7 +263,7 @@ class PipelineHandler(object):
             blast_cmd = ' '.join([
                         """module load anaconda; module load blast;module load blast+;"""
                         """python %s/src/genome/bacteriocin.py  """,
-                        """ --genome-files %s        """,
+                        """ --genome-files=%s        """,
                         """ --annotated-genes=%s     """,
                         """ --intergenes=%s          """,
                         """ --bacteriocins=%s        """,
@@ -286,6 +301,7 @@ class PipelineHandler(object):
             job.wait() 
         
         """ Collect all of the results from the jobs"""
+        print "Collecting all of the results from the jobs"
         bacteriocins_out = open(self.blasted_fasta_bacteriocins,'w')
         context_genes_out = open(self.cand_context_genes_fasta,'w')
         out_bac = ["%s.bacteriocins.txt"%(out) for out in out_fnames]
@@ -299,6 +315,7 @@ class PipelineHandler(object):
 
         bacteriocins_out.close()
         context_genes_out.close()
+        print "Done"
 
 
     """ Clusters bacteriocins and context genes together
@@ -309,33 +326,38 @@ class PipelineHandler(object):
 
     """
 
-    # not being used - Nafiz
-    def cluster(self,preprocess=False): # preprocess=False by Nafiz
-        print "Clustering"
-        if preprocess:
-            fasta.preprocess(self.cand_context_genes_tab,
-                            self.cand_context_genes_fasta)
+    # # not being used - Nafiz
+    # def cluster(self,preprocess=False): # preprocess=False by Nafiz
+    #     print "Clustering"
+    #     if preprocess:
+    #         fasta.preprocess(self.cand_context_genes_tab,
+    #                         self.cand_context_genes_fasta)
             
         
-        self.clusterer = cdhit.CDHit(self.cand_context_genes_fasta, 
-                                     self.cand_context_cluster,
-                                     self.similarity)
-        self.clusterer.run()
-        self.clusterer.parseClusters()
-        self.clusterer.dump(self.clusterpickle)
+    #     self.clusterer = cdhit.CDHit(self.cand_context_genes_fasta, 
+    #                                  self.cand_context_cluster,
+    #                                  self.similarity)
+    #     self.clusterer.run()
+    #     self.clusterer.parseClusters()
+    #     self.clusterer.dump(self.clusterpickle)
 
 
     # function inserted from quorum_pipeline.py - Nafiz
-    """ Identifies context genes using BLAST
+    """ 
+    Blasts cand_context_genes.fa file against training_directory files
+    and classify the files in cand_context_genes.fa into the 5 functional
+    categories.
+    - takes very little time
 
-        input -> "cand_context_genes.fa" files
-        output -> "classify" file
+    input -> "cand_context_genes.fa" files
+    output -> "classify" file
 
-        step 4 in the paper -
-        classify context genes into five functional categories.
+    step 4 in the paper -
+    classify context genes into five functional categories.
 
     """
     def blastContextGenes(self,njobs=2):
+
         print "Blasting Context Genes"
         """ First split up the main bacteriocin file into a bunch of smaller files"""
         split_fastafiles = ["%s/context.%d"%(self.intermediate,i)
@@ -355,7 +377,7 @@ class PipelineHandler(object):
             handle.close()
         
         context_cmd = ' '.join([
-                                 """module load anaconda; module load blast;module load blast+;""",
+                                 #"""module load anaconda; module load blast;module load blast+;""",
                                  """python %s/src/genome/context_gene.py""",
                                  """--training-directory=%s""",
                                  """--training-labels=%s""",
@@ -396,9 +418,8 @@ class PipelineHandler(object):
         for i in xrange(njobs):
             if os.path.exists(out_classes[i]):
                 shutil.copyfileobj(open(out_classes[i]),context_out)
-        context_out.close()    
-        pass     
-
+        context_out.close()
+        print "Done"    
 
 
     # Added from quorum_pipeline.py - Nafiz
@@ -408,44 +429,47 @@ class PipelineHandler(object):
 
     input -> "classify" file 
     """
-    def hmmerGenes(self,min_cluster=10,njobs=2):
+    def hmmerGenes(self, min_cluster = 10, njobs = 2):
         print "Hmmering Genes"
-        # Aggregate all of the bacteriocins and context genes
-        # into 5 files representing each class 
+
+
+        # take the classify file and extract all the context genes into 4
+        # different files like transport.fa, modifier.fa etc 
         class_handles = [open(c,'w') for c in self.class_files ]
-        for record in SeqIO.parse(self.blast_context_out,"fasta"):
+        for record in SeqIO.parse(self.blast_context_out,"fasta"): # self.blast_context_out = classify file
             label = record.id.split('|')[-1]
             index = self.classes.index(label)
-            SeqIO.write(record,class_handles[index],"fasta")
+            SeqIO.write(record, class_handles[index], "fasta")
 
         #Move all bacteriocins into toxins file
         # copy from blasted_bacteriocins.fa -> toxin.fa
-        shutil.copyfileobj(open(self.blasted_fasta_bacteriocins),
-                           class_handles[0])
+        shutil.copyfileobj(open(self.blasted_fasta_bacteriocins), class_handles[0])
 
         for c in class_handles: 
             c.close()
         for fname in self.class_files:
-            assert os.path.getsize(fname)>0
+            assert os.path.getsize(fname) > 0
+
         #Remove all duplicate ids from this files
         for fname in self.class_files:
             f = "%s.%d"%(fname,os.getpid())
-            fasta.remove_duplicates(fname,f)
-            os.rename(f,fname)
+            fasta.remove_duplicates(fname, f)
+            os.rename(f, fname)
         for fname in self.class_files:
-            assert os.path.getsize(fname)>0
+            assert os.path.getsize(fname) > 0
         #self.class_files = self.class_files[::-1] #Reverse list for testing]
         # Run separate instances of HMMER for each class
         print "threads",self.numThreads
 
-        self.hmmers = [hmmer.HMMER(f,self.numThreads,min_cluster) 
-                       for f in self.class_files]
+        self.hmmers = [hmmer.HMMER(f, self.numThreads, min_cluster) for f in self.class_files]
 
         for i in xrange(len(self.class_files)):
             H = self.hmmers[i]
-            H.writeClusters(similarity=0.7,memory=3000)
-            H.HMMspawn(msa=MAFFT,njobs=njobs)
-            H.search(self.faa,self.hmmer_class_out[i],maxpower=True,njobs=njobs)
+            H.writeClusters(similarity = 0.7, memory = 3000) # basically does cd-hit
+            H.HMMspawn(msa = MAFFT, njobs = njobs) # does multiple alignment using MAFFT and builds hmm
+            
+            # runs resulting phmmm's against all.faa file
+            H.search(self.faa, self.hmmer_class_out[i], maxpower = True, njobs = njobs) 
     
     # Added from quorum_pipeline.py
     """ Writes clusters and their corresponding sequences"""
@@ -476,11 +500,30 @@ class PipelineHandler(object):
         immunity_hits  = hmmer.parse("%s/immunity.out"%self.intermediate)
         regulator_hits = hmmer.parse("%s/regulator.out"%self.intermediate)
         transport_hits = hmmer.parse("%s/transport.out"%self.intermediate)
-        faaindex = fasta.Indexer(self.faa,self.faaidx)
+
+        # print "printing toxin hits"
+        # print toxin_hits
+
+        # print "printing modifier hits"
+        # print modifier_hits
+    
+        # print "printing immunity hits"
+        # print immunity_hits
+        
+        # print "printing regulator hits"
+        # print regulator_hits
+        
+        # print "printing transport hits"
+        # print transport_hits
+
+
+        faaindex = fasta.Indexer(self.faa, self.faaidx)
         faaindex.index()
         faaindex.load()
-        genefile = gff.GFF(self.gff,fasta_index=self.faaidx)
+
+        genefile = gff.GFF(self.gff, fasta_index = self.faaidx)
         genefile.indexdb()
+
         toxin_hits     = genefile.call_orfs(toxin_hits    ,faaindex)
         modifier_hits  = genefile.call_orfs(modifier_hits ,faaindex)
         immunity_hits  = genefile.call_orfs(immunity_hits ,faaindex)
@@ -493,11 +536,30 @@ class PipelineHandler(object):
         regulator_hits = threshold_filter.filter(regulator_hits,threshold)
         transport_hits = threshold_filter.filter(transport_hits,threshold)
 
+        print "printing toxin hits"
+        print toxin_hits
+
+        print "printing modifier hits"
+        print modifier_hits
+    
+        print "printing immunity hits"
+        print immunity_hits
+        
+        print "printing regulator hits"
+        print regulator_hits
+        
+        print "printing transport hits"
+        print transport_hits
+
+
         all_hits = toxin_hits+modifier_hits+immunity_hits+regulator_hits+transport_hits
         seq_dict = {x[0]:x[1] for x in all_hits}
    
         del all_hits
         
+        print "toxin hits"
+        print toxin_hits
+
         toxin_ids,toxin_seqs = zip(*toxin_hits)
         modifier_ids,modifier_seqs = zip(*modifier_hits)
         immunity_ids,immunity_seqs = zip(*immunity_hits)
@@ -525,6 +587,8 @@ class PipelineHandler(object):
         del transport_ids
         print "all ids",len(all_ids)
         print '\n'.join(map(str,all_ids[:10]))
+
+
         #Find operons with at least a toxin and a transport
         clusters = clique_filter.findContextGeneClusters(all_ids,
                                                          radius=clique_radius,
@@ -641,12 +705,9 @@ if __name__=="__main__":
     
         proc.preprocess()
         proc.blast()
-    #    proc.cluster()
         proc.blastContextGenes()
         proc.hmmerGenes()
-        proc.cliqueFilter
-    #    proc.naiveBayes()
-
+        proc.cliqueFilter()
         
     else:
         del sys.argv[1:]
