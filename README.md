@@ -21,10 +21,6 @@ Most of these can be installed with the following command on Ubuntu. You can run
 ```sh
 sudo apt-get install python python-biopython python-matplotlib python-panda python-numpy nltk clustalw cd-hit hmmer
 ```
-Command in an ipython notebook-
-
-%%bash
-sudo apt-get install python python-biopython python-matplotlib python-panda python-numpy nltk clustalw cd-hit hmmer
 
 You need to also install blastall, mafft, transeq and bx-python.
 
