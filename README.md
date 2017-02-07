@@ -16,7 +16,7 @@ First, you need to install the following things:
 * mafft
 * transeq
 
-Most of these can be installed with the following command on Ubuntu. You can run it with shift+enter, it will run on your terminal.
+Most of these can be installed with the following command on Ubuntu.
 
 ```sh
 sudo apt-get install python python-biopython python-matplotlib python-panda python-numpy nltk clustalw cd-hit hmmer
