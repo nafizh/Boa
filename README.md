@@ -1,3 +1,15 @@
+**Paper**
+
+A large scale prediction of bacteriocin gene blocks suggests a wide functional spectrum for bacteriocins.
+James T. Morton, Stefan D. Freed, Shaun W. Lee and Iddo Friedberg.
+
+[[link to paper]](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-015-0792-9)
+[[cite]](https://scholar.googleusercontent.com/scholar.bib?q=info:40O74U1bm9QJ:scholar.google.com/&output=citation&scisig=AAGBfm0AAAAAWLB2h18U74eoafMrhaA1tBzH_xhdWw57&scisf=4&ct=citation&cd=-1&hl=en)
+
+
+ 
+
+
 ##How to run Boa:
 
 First, you need to install the following things:
