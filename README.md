@@ -1,6 +1,7 @@
 **Paper**
 
-A large scale prediction of bacteriocin gene blocks suggests a wide functional spectrum for bacteriocins.
+*A large scale prediction of bacteriocin gene blocks suggests a wide functional spectrum for bacteriocins.*
+
 James T. Morton, Stefan D. Freed, Shaun W. Lee and Iddo Friedberg.
 
 [[link to paper]](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-015-0792-9)
